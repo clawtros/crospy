@@ -1,6 +1,6 @@
 import MySQLdb
 import re
-from settings import BLANK
+from crossword import BLANK
 
 
 class WordList:
@@ -24,4 +24,7 @@ class MySQLWordList:
         words = [t for t in self.words.keys() if matching.match(t)]
         return words
 
+    def define(self, word):
+        definitions = self.words.get(word).split('|||')
+        return definitions[0]
         

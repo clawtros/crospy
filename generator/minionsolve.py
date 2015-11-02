@@ -200,7 +200,7 @@ def solve_input(opts, *args, **kwargs):
         grid = Grid(INPUT[gridwant])
     elif opts.pregrid:
         import random
-        g = pickle.loads(open("/home/adam/projects/webcruci/gen/grids.pickle", "r").read())
+        g = pickle.loads(open("/home/adam/unfailed_grids.pickle", "r").read())
         grid = Grid(random.choice(g))
     else:
         if opts.cells and opts.size:

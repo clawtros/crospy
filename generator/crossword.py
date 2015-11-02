@@ -47,6 +47,7 @@ class Grid:
                           in enumerate(initial_data.split('\n'))]
             self.rows = len(self.cells)
             self.cols = len(self.cells[0])
+            self.size = len(self.cells[0])
         elif size:
             self.cells = [[Cell(colnum, rownum) for colnum in range(size)]
                           for rownum in range(size)]
@@ -58,6 +59,9 @@ class Grid:
             self.rows = from_grid.rows
             self.cols = from_grid.cols
 
+    def get_cell_id(self, cell):
+        return self.size * cell.y + cell.x + 1
+            
     def fillcells(self, cells, word):
         return [cell.set_value(word[idx]) for idx, cell in enumerate(cells)]
 

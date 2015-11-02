@@ -1,6 +1,5 @@
 from random import randrange
-from crossword import Grid, random_grid
-from wordlist import MySQLWordList
+from crossword import Grid
 from subprocess import Popen, PIPE
 import os
 
@@ -80,11 +79,11 @@ class MinionSolver:
         return filename
 
     def apply_solutions(self, solutions):
-        across, down = grid.get_words()
-        nums = grid.get_numbered_cells(across,down)
+        across, down = self.grid.get_words()
+        nums = self.grid.get_numbered_cells(across,down)
         for k, v in across.items():
-            grid.fillcells(across[k], solutions["h%d" % nums[k]])
-        return grid
+            self.grid.fillcells(across[k], solutions["h%d" % nums[k]])
+        return self.grid
     
     def solve(self):
         filename = self.write_minionfile()
@@ -106,9 +105,3 @@ class MinionSolver:
                                              for line in sollines]))
             return self.apply_solutions(sollines)
         return None
-
-grid = Grid(size=5)
-random_grid(grid, 0.1)
-wordlist = MySQLWordList(username="cruci", password="cruci", host="127.0.0.1", table_name="nyt_dictionary")
-solver = MinionSolver(grid, wordlist, '/home/adam/src/minion-1.7/bin/minion')
-print solver.solve()
