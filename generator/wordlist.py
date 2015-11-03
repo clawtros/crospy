@@ -1,6 +1,7 @@
 import MySQLdb
 import re
 from crossword import BLANK
+import random
 
 
 class WordList:
@@ -26,5 +27,5 @@ class MySQLWordList:
 
     def define(self, word):
         definitions = self.words.get(word).split('|||')
-        return definitions[0]
+        return random.choice(definitions)
         
