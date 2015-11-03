@@ -17,4 +17,4 @@ def index():
     return json.dumps(get_random())
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")

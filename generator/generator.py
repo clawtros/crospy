@@ -11,6 +11,7 @@ wordlist = MySQLWordList(
     username=settings['database'].get('user'),
     password=settings['database'].get('password'),
     host=settings['database'].get('host'),
+    database=settings['database'].get('database'),
     table_name=settings['database'].get('table_name')
 )
 solver = MinionSolver(None, wordlist, settings['minion_path'])
