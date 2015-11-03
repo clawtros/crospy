@@ -1,0 +1,11 @@
+settings = {
+    "database": {
+        "user": "root",
+        "password": "",
+        "host": "127.0.0.1",
+        "database": "xw2",
+        "table_name": "nyt_dictionary"
+    },
+    "minion_path": "/Users/adam/src/minion-1.7/bin/minion",
+    "grid_path": "/Users/adam/projects/crospy/generator/unfailed_grids.pickle"
+}

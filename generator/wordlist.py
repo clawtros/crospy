@@ -12,8 +12,10 @@ class MySQLWordList:
     words = {}
 
     def __init__(self, username, password, host, table_name, database="xwutf", word_column="word", definition_column="definition"):
+        print host, username, password
         self.db = MySQLdb.connect(host, username, password)
         c = self.db.cursor()
+        print "INIT"
         # FIXME: parameterize this -- mysqldb breaks the table_name w/ quotes
         c.execute("SELECT %s, %s FROM %s.%s" % (word_column, definition_column, database, table_name,))
 
@@ -28,4 +30,3 @@ class MySQLWordList:
     def define(self, word):
         definitions = self.words.get(word).split('|||')
         return random.choice(definitions)
-        

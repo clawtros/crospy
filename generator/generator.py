@@ -2,17 +2,20 @@ from crossword import Grid, random_grid
 from wordlist import MySQLWordList
 from solver import MinionSolver
 import cPickle
-from collections import defaultdict
 import json
 import random
+from generator_conf import settings
 
-successes = defaultdict(list)
-failures = defaultdict(int)
-orig_wordlist = MySQLWordList(username="cruci", password="cruci", host="127.0.0.1", table_name="dictionary")
-wordlist = MySQLWordList(username="cruci", password="cruci", host="127.0.0.1", table_name="nyt_dictionary")
-solver = MinionSolver(None, wordlist, '/home/adam/src/minion-1.7/bin/minion')
 
-grids = cPickle.loads(open("/home/adam/unfailed_grids.pickle", "r").read())
+wordlist = MySQLWordList(
+    username=settings['database'].get('user'),
+    password=settings['database'].get('password'),
+    host=settings['database'].get('host'),
+    table_name=settings['database'].get('table_name')
+)
+solver = MinionSolver(None, wordlist, settings['minion_path'])
+
+grids = cPickle.loads(open(settings['grid_path'], "r").read())
 
 
 # TODO: where should this go?
@@ -57,6 +60,7 @@ def get_random():
     solver.grid = grid
     return json_grid(solver.solve())
 
+
 def get_random_orig(size=13):
     grid = Grid(size=size)
     grid = random_grid(grid, 0.2)
@@ -69,9 +73,10 @@ def get_random_orig(size=13):
 if __name__ == "__main__":
     solved = get_random()
 
-    result = {"result": str(solved).replace("\n","") if solved else "*",
-              "size": len(solved.cells[0]) if solved else 1,
-              
-              "saved_id": 0}
+    result = {
+        "result": str(solved).replace("\n", "") if solved else "*",
+        "size": len(solved.cells[0]) if solved else 1,
+        "saved_id": 0
+    }
 
     print json.dumps(result)
