@@ -81,7 +81,7 @@
   top: 2px;
   left: 2px;
   color: #555;
-  font-size: 6pt;
+  font-size: 25%;
 }
 .cell-content {
   -webkit-touch-callout: none;
@@ -285,9 +285,6 @@ label {
   right: 0;
 }
 @media only screen and (max-width: 48em) {
-  .cell-number {
-    font-size: 6px;
-  }
   h3.current-clue {
     white-space: initial;
     position: fixed;
