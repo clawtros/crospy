@@ -1,0 +1,317 @@
+.keyboard.onscreen {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  z-index: 10005;
+}
+.keyboard {
+  padding: 20px 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  transition: transform 0.25s, opacity 0.25s;
+  -webkit-transition: -webkit-transform 0.25s, opacity 0.25s;
+}
+.keyboard-key {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 4vw;
+  color: white;
+  display: inline-block;
+  margin: 0.5vw;
+  padding: 0.5vw 2vw;
+  border: 1px solid white;
+}
+.keyboard-contents {
+  position: relative;
+}
+.keyboard-close {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.keyboard-direction {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.keyboard-next {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.keyboard-backspace {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.clearfix {
+  clear: both;
+  display: block;
+}
+.focused {
+  background-color: #ff9;
+}
+.cell {
+  float: left;
+  position: relative;
+  transition: background 0.25s;
+  border: 1px solid #111;
+}
+.cell-number {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: #555;
+  font-size: 6pt;
+}
+.cell-content {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.input-cell {
+  background-color: gold;
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transition: transform 0.15s ease-out;
+  -webkit-transition: transform 0.15s ease-out;
+  z-index: 100;
+}
+.cell-list {
+  border: 1px solid black;
+}
+.unplayable {
+  background-color: #444;
+}
+.flex-centered {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+}
+.clue-list-container {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+.clue-list {
+  padding: 0;
+  margin: 0;
+}
+.clue-number,
+.clue-phrase {
+  display: inline-block;
+  cursor: pointer;
+}
+.clue-number {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.clue-container {
+  list-style-type: none;
+  word-break: break-word;
+  padding: 4px 10px;
+}
+.active-clue {
+  background-color: gold;
+}
+.incorrect {
+  background-color: red;
+}
+div.container {
+  width: 100%;
+  max-width: 1180px;
+  padding: 5px;
+}
+.small-vertical-space {
+  height: 10px;
+}
+.clue-list-header {
+  margin: 0;
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+}
+label {
+  cursor: pointer;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.loading,
+#app {
+  transition: transform 1s, opacity 0.5s;
+}
+.out {
+  opacity: 0;
+}
+.current-clue-text {
+  font-family: Georgia;
+  font-weight: normal;
+}
+.current-clue {
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.current-clue:hover {
+  overflow: visible;
+  white-space: normal;
+}
+.foo {
+  width: 10%;
+  padding-top: 10%;
+  float: right;
+  transition: background-color 0.5s, transform 0.5s;
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
+}
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  color: black;
+  text-shadow: 0 0 2px #ccc;
+}
+.highlighted {
+  background-color: #222;
+}
+label {
+  margin-right: 20px;
+}
+.keyboard.onscreen {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  z-index: 10005;
+}
+.keyboard {
+  padding: 20px 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  transition: transform 0.25s, opacity 0.25s;
+  -webkit-transition: -webkit-transform 0.25s, opacity 0.25s;
+}
+.keyboard-key {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 4vw;
+  color: white;
+  display: inline-block;
+  margin: 0.5vw;
+  padding: 0.5vw 2vw;
+  border: 1px solid white;
+}
+.keyboard-contents {
+  position: relative;
+}
+.keyboard-close {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.keyboard-direction {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.keyboard-next {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.keyboard-backspace {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media only screen and (max-width: 48em) {
+  h3.current-clue {
+    white-space: initial;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    z-index: 10001;
+    padding: 20px;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    left: 0;
+    font-size: 12pt;
+    height: 80px;
+    max-height: 80px;
+    overflow-y: auto;
+  }
+  label.keyboard-label {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10001;
+    color: white;
+  }
+  div.cell {
+    transition: initial;
+  }
+  div.cell-list {
+    margin-top: 80px;
+  }
+}
