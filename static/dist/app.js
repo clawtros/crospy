@@ -35,9 +35,10 @@
       };
       
   } else {
-      
-      document.onready = function() {
-          var interval = makeLoader();
+      // TODO: HANDLE ERRORS, HAHAHA
+      var interval = makeLoader();
+
+      function generate() {
           $.ajax({
               url: "/api/random/",
               datatype: "json",
@@ -50,12 +51,12 @@
                   clearInterval(interval);
               },
               error: function() {
-                  alert('kaboom');
-                  $('.loading').addClass('out');
-                  $('#app').removeClass('out');
-                  clearInterval(interval);
+                  generate();
               }
           });
+      }
+      document.onready = function() {
+          generate();
       };
   }
 
