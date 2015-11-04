@@ -39,15 +39,21 @@ class Grid:
         if initial_data:
             if size:
                 initial_data = "".join([c + "\n" if (idx+1) % size==0 else c for idx,c in enumerate(initial_data)])
+            split_data = [c for c in initial_data.split('\n') if c]
             self.cells = [[Cell(colnum,
                                 rownum,
                                 is_black=True if c==BLACK else False,
                                 initial_value=c)
                            for colnum,c in enumerate(l)] for rownum, l
-                          in enumerate(initial_data.split('\n'))]
+                          in enumerate(split_data)]
             self.rows = len(self.cells)
             self.cols = len(self.cells[0])
             self.size = len(self.cells[0])
+            if size:
+                self.rows = size
+                self.cols = size
+                self.size = size
+                
         elif size:
             self.cells = [[Cell(colnum, rownum) for colnum in range(size)]
                           for rownum in range(size)]
@@ -102,7 +108,7 @@ class Grid:
     @staticmethod
     def format_words(words, nums):        
         return sorted([(nums[start],Grid.stringify_cells(word)) for start, word in words.items()],
-                      cmp=lambda a,b:cmp(a[0],b[0]))
+                      cmp=lambda a,b:cmp(a[0], b[0]))
 
     def get_words(self):
         ar,dr = {},{}
