@@ -163,7 +163,7 @@
 }
 div.container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1080px;
   padding: 5px;
 }
 .small-vertical-space {
@@ -222,10 +222,10 @@ label {
   transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   color: black;
-  text-shadow: 0 0 2px #ccc;
+  /*    text-shadow: 0 0 2px #ccc; */
 }
 .highlighted {
-  background-color: #222;
+  background-color: #777;
 }
 label {
   margin-right: 20px;

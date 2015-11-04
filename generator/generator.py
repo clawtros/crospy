@@ -18,7 +18,6 @@ solver = MinionSolver(None, wordlist, settings['minion_path'])
 
 grids = cPickle.loads(open(settings['grid_path'], "r").read())
 
-
 # TODO: where should this go?
 def get_clues(numbered_words):
     result = {}

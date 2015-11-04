@@ -87,7 +87,7 @@
   // TODO: Rename this to Grid or somesuch
   var Keyboard = require('./Keyboard.jsx'),
       Cell = require('./Cell.jsx'),
-      UNPLAYABLE = "#",
+      UNPLAYABLE = "#", 
       DIRECTIONS = require('../models/Directions.js');
 
   module.exports = React.createClass({displayName: "exports",
