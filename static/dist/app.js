@@ -24,7 +24,8 @@
         };
     window.addEventListener('load', function() {
         // TODO: HANDLE ERRORS, HAHAHA
-        var interval = makeLoader();
+        var interval = makeLoader(),
+            errors = 0;
         
         function generate() {
             console.log('generating');
@@ -42,7 +43,10 @@
                 },
                 error: function() {
                     console.log("RETRYING OH GOD");
-                    generate();
+                    errors += 1;
+                    if (errors < 10) {
+                        generate();
+                    }
                 }
             });
         }
