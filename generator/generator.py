@@ -27,7 +27,7 @@ def get_clues(numbered_words):
             print "UNFOUND", t
         result[n] = {
             "clue_number": n,
-            "clue_text": wordlist.define(t).decode('latin-1').encode('utf-8')
+            "clue_text": wordlist.define(t).decode('utf-8')
         }
     return result
 
