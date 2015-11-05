@@ -12,10 +12,10 @@ wordlist = MySQLWordList(
     password=settings['database'].get('password'),
     host=settings['database'].get('host'),
     database=settings['database'].get('database'),
-    table_name=settings['database'].get('table_name')
+    table_name=settings['database'].get('table_name'),
+    encoding=settings['database'].get('encoding')
 )
 solver = MinionSolver(None, wordlist, settings['minion_path'])
-
 grids = cPickle.loads(open(settings['grid_path'], "r").read())
 
 # TODO: where should this go?

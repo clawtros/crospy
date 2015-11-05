@@ -11,7 +11,7 @@ class WordList:
 class MySQLWordList:
     words = {}
 
-    def __init__(self, username, password, host, table_name, database="xwutf", word_column="word", definition_column="definition", encoding="latin1"):
+    def __init__(self, username, password, host, table_name, database="xwutf", word_column="word", definition_column="definition", encoding="utf-8"):
         self.db = MySQLdb.connect(host, username, password)
         self.encoding = encoding
         c = self.db.cursor()
