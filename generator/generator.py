@@ -23,12 +23,19 @@ def get_clues(numbered_words):
     result = {}
 
     for n, t in numbered_words:
-        if not wordlist.define(t):
-            print "UNFOUND", t
-        result[n] = {
-            "clue_number": n,
-            "clue_text": wordlist.define(t).decode('utf-8')
-        }
+        clue = unicode(wordlist.define(t), 'latin1')
+        try:
+            result[n] = {
+                "clue_number": n,
+                "clue_text": clue.encode('utf-8')
+            }
+        except UnicodeDecodeError, e:
+            print "UDE: ", n, t, clue, clue.__class__
+            print e
+            result[n] = {
+                "clue_number": n,
+                "clue_text": "ERROR"                
+            }
     return result
 
 
