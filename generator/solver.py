@@ -90,7 +90,7 @@ class MinionSolver:
         execstr = "%s %s -varorder sdf-random -noresume -timelimit %d" % (
             self.minion_path, 
             filename,
-            5) # timelimit)
+            20) # timelimit)
 
         p = Popen(execstr,
                   shell=True,
