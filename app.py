@@ -1,10 +1,9 @@
 from flask import Flask, render_template
-from flask.ext.cors import CORS
 from generator.generator import get_random, get_random_orig
 import json
 
 app = Flask(__name__)
-CORS(app)
+app.debug = True
 
 @app.route('/api/random/size/<int:size>/')
 def play_size(size):
