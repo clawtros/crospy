@@ -28,12 +28,10 @@
             errors = 0;
         
         function generate() {
-            console.log('generating');
             $.ajax({
                 url: "/api/random/",
                 datatype: "json",
                 success: function(result) {
-                    console.log('done');
                     var data = JSON.parse(result);
                     var model = new CrosswordModel(data.cells, data.gridinfo.size, data);
                     React.render(React.createElement(Crossword, {model: model, rawData: data, title: data.gridinfo.name, clues: data.clues, numbered: data.numbered, cells: data.cells, size: data.gridinfo.size}), document.getElementById('app'));
@@ -42,7 +40,7 @@
                     clearInterval(interval);
                 },
                 error: function() {
-                    console.log("RETRYING OH GOD");
+                    console.log("RETRYING OH GOD ", errors);
                     errors += 1;
                     if (errors < 10) {
                         generate();
@@ -91,7 +89,7 @@
   // TODO: Rename this to Grid or somesuch
   var Keyboard = require('./Keyboard.jsx'),
       Cell = require('./Cell.jsx'),
-      UNPLAYABLE = "#", 
+      UNPLAYABLE = "#",
       DIRECTIONS = require('../models/Directions.js');
 
   module.exports = React.createClass({displayName: "exports",

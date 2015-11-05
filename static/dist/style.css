@@ -208,14 +208,23 @@ label {
   overflow: visible;
   white-space: normal;
 }
+.highlighted {
+  background-color: #777;
+  transform: scale(0.95);
+}
+#loading_container {
+  width: 100vmin;
+  margin: 0 auto;
+}
 .foo {
-  width: 10%;
-  padding-top: 10%;
+  width: 10vmin;
+  height: 10vmin;
   float: right;
   transition: background-color 0.5s, transform 0.5s;
   -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
 }
 .loading-text {
+  z-index: 10000;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -223,9 +232,6 @@ label {
   -webkit-transform: translateX(-50%) translateY(-50%);
   color: black;
   /*    text-shadow: 0 0 2px #ccc; */
-}
-.highlighted {
-  background-color: #777;
 }
 label {
   margin-right: 20px;
