@@ -15,15 +15,18 @@ export default React.createClass({
     }
   },
 
-  handleChange: function () {
-      var values = this.state.cellValues;
-      values[cellId] = newValue;
-      console.log(values, cellId, newValue);
-      this.setState({cellValues: values});
+  handleChange: function (changeEvent) {
+    var values = this.state.cellValues;
+    console.log("BEFORE", values);
+
+    values[changeEvent.cellId] = changeEvent.character;
+    this.setState({cellValues: values});
+    console.log(values, changeEvent);
+
   },
   
   componentWillMount: function() {
-    CrosswordStore.addChangeListener((cellId, newValue) => this.handleChange);
+    CrosswordStore.addChangeListener(this.handleChange);
   },
   
   makeActive: function(id) {
@@ -41,9 +44,9 @@ export default React.createClass({
   handleBackspace: function() {
     if (this.state.cellValues[this.props.activeCell] == undefined) {
       this.go(-1);
-      Actions.keyEntered(undefined, this.props.activeCell);
+      Actions.keyEntered(this.props.activeCell, undefined);
     } else {
-      Actions.keyEntered(undefined, this.props.activeCell);
+      Actions.keyEntered(this.props.activeCell, undefined);
       this.go(-1);
     }
   },

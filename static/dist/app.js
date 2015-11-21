@@ -28535,71 +28535,71 @@ var AppDispatcher = require('./app-dispatcher'),
     EventEmitter = require('events').EventEmitter;
 
 function _generateCrossword(callback, errors) {
-    errors = errors || 0;
-    fetch('/api/random/').then(function (response) {
-        return response.json();
-    }).then(function (data) {
-        callback(data);
-    }).catch(function (err) {
-        console.log("RETRYING ", errors, err);
-        if (errors < 10) {
-            _generateCrossword(callback, errors + 1);
-        }
-    });
+  errors = errors || 0;
+  fetch('/api/random/').then(function (response) {
+    return response.json();
+  }).then(function (data) {
+    callback(data);
+  }).catch(function (err) {
+    console.log("RETRYING ", errors, err);
+    if (errors < 10) {
+      _generateCrossword(callback, errors + 1);
+    }
+  });
 }
 
 function _loadCrossword(crosswordId, callback) {
-    fetch('/api/grid/' + crosswordId + '/').then(function (response) {
-        return response.json();
-    }).then(function (data) {
-        callback(data);
-    });
+  fetch('/api/grid/' + crosswordId + '/').then(function (response) {
+    return response.json();
+  }).then(function (data) {
+    callback(data);
+  });
 }
 
 function _loadValues(crosswordId, callback) {
-    fetch('/api/grid/' + crosswordId + '/').then(function (response) {
-        return response.json();
-    }).then(function (data) {
-        callback(data);
-    });
+  fetch('/api/grid/' + crosswordId + '/').then(function (response) {
+    return response.json();
+  }).then(function (data) {
+    callback(data);
+  });
 }
 
 var CrosswordStore = assign(EventEmitter.prototype, {
-    emitChange: function emitChange() {
-        this.emit(AppConstants.CHANGE_EVENT);
-    },
+  emitChange: function emitChange() {
+    this.emit(AppConstants.CHANGE_EVENT);
+  },
 
-    addChangeListener: function addChangeListener(callback) {
-        this.on(AppConstants.CHANGE_EVENT, callback);
-    },
+  addChangeListener: function addChangeListener(callback) {
+    this.on(AppConstants.CHANGE_EVENT, callback);
+  },
 
-    removeChangeListener: function removeChangeListener(callback) {
-        this.removeListener(AppConstants.CHANGE_EVENT, callback);
-    },
+  removeChangeListener: function removeChangeListener(callback) {
+    this.removeListener(AppConstants.CHANGE_EVENT, callback);
+  },
 
-    getValues: function getValues(crosswordId) {
-        return [];
-    },
+  getValues: function getValues(crosswordId) {
+    return [];
+  },
 
-    dispatcherIndex: AppDispatcher.register(function (payload) {
-        var action = payload.action;
-        switch (action.actionType) {
-            case AppConstants.KEY_ENTERED:
-                CrosswordStore.emit(AppConstants.CHANGE_EVENT, payload.event);
-                break;
+  dispatcherIndex: AppDispatcher.register(function (payload) {
+    var action = payload.action;
+    switch (action.actionType) {
+      case AppConstants.KEY_ENTERED:
+        CrosswordStore.emit(AppConstants.CHANGE_EVENT, action.event);
+        break;
 
-            case AppConstants.LOAD_CROSSWORD:
-                _loadCrossword(action.crosswordId, function (data) {
-                    CrosswordStore.emit(AppConstants.LOADED_EVENT, data);
-                });
-                break;
-            case AppConstants.REQUEST_CROSSWORD:
-                _generateCrossword(function (data) {
-                    CrosswordStore.emit(AppConstants.GENERATED_EVENT, data);
-                });
-                break;
-        }
-    })
+      case AppConstants.LOAD_CROSSWORD:
+        _loadCrossword(action.crosswordId, function (data) {
+          CrosswordStore.emit(AppConstants.LOADED_EVENT, data);
+        });
+        break;
+      case AppConstants.REQUEST_CROSSWORD:
+        _generateCrossword(function (data) {
+          CrosswordStore.emit(AppConstants.GENERATED_EVENT, data);
+        });
+        break;
+    }
+  })
 });
 
 module.exports = CrosswordStore;
@@ -28827,19 +28827,17 @@ exports.default = _react2.default.createClass({
     };
   },
 
-  handleChange: function handleChange() {
+  handleChange: function handleChange(changeEvent) {
     var values = this.state.cellValues;
-    values[cellId] = newValue;
-    console.log(values, cellId, newValue);
+    console.log("BEFORE", values);
+
+    values[changeEvent.cellId] = changeEvent.character;
     this.setState({ cellValues: values });
+    console.log(values, changeEvent);
   },
 
   componentWillMount: function componentWillMount() {
-    var _this = this;
-
-    _CrosswordStore2.default.addChangeListener(function (cellId, newValue) {
-      return _this.handleChange;
-    });
+    _CrosswordStore2.default.addChangeListener(this.handleChange);
   },
 
   makeActive: function makeActive(id) {
@@ -28857,9 +28855,9 @@ exports.default = _react2.default.createClass({
   handleBackspace: function handleBackspace() {
     if (this.state.cellValues[this.props.activeCell] == undefined) {
       this.go(-1);
-      _appActions2.default.keyEntered(undefined, this.props.activeCell);
+      _appActions2.default.keyEntered(this.props.activeCell, undefined);
     } else {
-      _appActions2.default.keyEntered(undefined, this.props.activeCell);
+      _appActions2.default.keyEntered(this.props.activeCell, undefined);
       this.go(-1);
     }
   },
