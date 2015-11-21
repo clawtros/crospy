@@ -3,6 +3,7 @@ from generator.generator import get_random, get_random_orig
 from pymongo import MongoClient
 from bson import ObjectId
 from flask_socketio import SocketIO, emit, join_room
+from collections import defaultdict
 import json
 
 client = MongoClient()
@@ -12,9 +13,11 @@ app = Flask(__name__)
 app.debug = True
 socketio = SocketIO(app)
 
+roomdata = defaultdict(list)
+
 @socketio.on('key pressed')
 def handle_key_pressed(data):
-    print data
+    roomdata[data['room']].append(data)
     emit('key pressed', data, broadcast=True, room=data['room'])
     return data
 
@@ -24,6 +27,9 @@ def on_join(data):
     print "JOIN", data
     room = data['room']
     join_room(room)
+    for data in roomdata[room]:
+        emit('key pressed', data)
+        
     
 
 @app.route('/api/random/size/<int:size>/')
