@@ -1,3 +1,1 @@
-(function(module) {
-    module.exports = '#';
-}(module));
+export default '#';

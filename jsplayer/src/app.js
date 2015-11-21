@@ -1,11 +1,12 @@
-import Crossword from './components/Crossword.jsx'
+import Crossword from './components/Crossword.jsx';
+import CrosswordStore from './CrosswordStore';
 
 var React = require('react'),
     ReactDOM = require('react-dom'),
     $ = require('jquery'),
     CrosswordModel = require('./models/CrosswordModel.js'),
     AppActions = require('./app-actions'),
-    CrosswordStore = require('./CrosswordStore'),
+
     numloadingcells = 15 * 15,
     data = require('./data.js'),
     testLoading = true,
@@ -27,13 +28,13 @@ var React = require('react'),
 
 function finalizeGrid(data) {
   var model = new CrosswordModel(data.cells, data.gridinfo.size, data);
-  console.log(Crossword);
   ReactDOM.render(<Crossword model={model} rawData={data} title={data.gridinfo.name} clues={data.clues} numbered={data.numbered} cells={data.cells} size={data.gridinfo.size}/>, document.getElementById('app'));
   $('.loading').addClass('out');
   $('#app').removeClass('out');
   clearInterval(interval);
 }
 
+console.log(CrosswordStore);
 CrosswordStore.on('generated', function(data) {
   finalizeGrid(data);
   window.history.pushState({id: data._id}, 'Random Crossword', '/' + data._id + '/')

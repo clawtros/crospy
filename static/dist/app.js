@@ -28651,7 +28651,6 @@ var Dispatcher = require('flux').Dispatcher,
     assign = require('object-assign'),
     AppDispatcher = assign(new Dispatcher(), {
   handleViewAction: function handleViewAction(action) {
-    console.log('action', action);
     this.dispatch({
       source: "VIEW_ACTION",
       action: action
@@ -28668,6 +28667,10 @@ var _Crossword = require('./components/Crossword.jsx');
 
 var _Crossword2 = _interopRequireDefault(_Crossword);
 
+var _CrosswordStore = require('./CrosswordStore');
+
+var _CrosswordStore2 = _interopRequireDefault(_CrosswordStore);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var React = require('react'),
@@ -28675,7 +28678,6 @@ var React = require('react'),
     $ = require('jquery'),
     CrosswordModel = require('./models/CrosswordModel.js'),
     AppActions = require('./app-actions'),
-    CrosswordStore = require('./CrosswordStore'),
     numloadingcells = 15 * 15,
     data = require('./data.js'),
     testLoading = true,
@@ -28697,19 +28699,19 @@ var React = require('react'),
 
 function finalizeGrid(data) {
   var model = new CrosswordModel(data.cells, data.gridinfo.size, data);
-  console.log(_Crossword2.default);
   ReactDOM.render(React.createElement(_Crossword2.default, { model: model, rawData: data, title: data.gridinfo.name, clues: data.clues, numbered: data.numbered, cells: data.cells, size: data.gridinfo.size }), document.getElementById('app'));
   $('.loading').addClass('out');
   $('#app').removeClass('out');
   clearInterval(interval);
 }
 
-CrosswordStore.on('generated', function (data) {
+console.log(_CrosswordStore2.default);
+_CrosswordStore2.default.on('generated', function (data) {
   finalizeGrid(data);
   window.history.pushState({ id: data._id }, 'Random Crossword', '/' + data._id + '/');
 });
 
-CrosswordStore.on('loaded', finalizeGrid);
+_CrosswordStore2.default.on('loaded', finalizeGrid);
 
 function generateCrossword() {
   interval = makeLoader();
@@ -28759,6 +28761,7 @@ exports.default = _react2.default.createClass({
       'focused': this.props.focused === true,
       'unplayable': !this.props.playable
     });
+
     return _react2.default.createElement(
       'div',
       { style: style, className: classes },
@@ -28808,9 +28811,11 @@ var _Directions = require('../models/Directions.js');
 
 var _Directions2 = _interopRequireDefault(_Directions);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Unplayable = require('../models/Unplayable.js');
 
-var UNPLAYABLE = "#";
+var _Unplayable2 = _interopRequireDefault(_Unplayable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _react2.default.createClass({
   displayName: 'Cells',
@@ -28822,44 +28827,41 @@ exports.default = _react2.default.createClass({
     };
   },
 
+  handleChange: function handleChange() {
+    var values = this.state.cellValues;
+    values[cellId] = newValue;
+    console.log(values, cellId, newValue);
+    this.setState({ cellValues: values });
+  },
+
   componentWillMount: function componentWillMount() {
-    _CrosswordStore2.default.addChangeListener(function (values) {
-      this.setState({ cellValues: values });
+    var _this = this;
+
+    _CrosswordStore2.default.addChangeListener(function (cellId, newValue) {
+      return _this.handleChange;
     });
   },
 
   makeActive: function makeActive(id) {
-    if (this.props.values[id] !== UNPLAYABLE) {
+    if (this.props.values[id] !== _Unplayable2.default) {
       this.props.makeActive(id);
     }
   },
 
   handleLetter: function handleLetter(character) {
     var nextCell = this.nextCellFrom(this.props.activeCell, 1, this.props.direction);
-    _appActions2.default.keyEntered(character, this.props.activeCell);
-    //this.state.cellValues[this.props.activeCell] = character;
-
-    //TODO: figure out some good next word logic here.  this gets a bit weird
-    //      if ((this.props.values[nextCell] !== UNPLAYABLE) && Math.abs(this.props.activeCell - nextCell) <= this.props.size) {
-    //        this.go(1);
-    //      } else {
-    //        this.props.skipWord(1);
-    //      }
+    _appActions2.default.keyEntered(this.props.activeCell, character);
     this.go(1);
   },
 
   handleBackspace: function handleBackspace() {
     if (this.state.cellValues[this.props.activeCell] == undefined) {
       this.go(-1);
-
-      _appActions2.default.keyEntered(character, this.props.activeCell);
-      // this.state.cellValues[this.props.activeCell] = undefined;
+      _appActions2.default.keyEntered(undefined, this.props.activeCell);
     } else {
-        _appActions2.default.keyEntered(character, this.props.activeCell);
-
-        //this.state.cellValues[this.props.activeCell] = undefined;
-        this.go(-1);
-      }
+      _appActions2.default.keyEntered(undefined, this.props.activeCell);
+      this.go(-1);
+    }
   },
 
   handleKeyDown: function handleKeyDown(e) {
@@ -28963,7 +28965,7 @@ exports.default = _react2.default.createClass({
         initial = this.nextCellFrom(this.props.activeCell, delta, direction),
         next = initial;
 
-    while (this.props.values[next] === UNPLAYABLE) {
+    while (this.props.values[next] === _Unplayable2.default) {
       next = this.nextCellFrom(next, delta, direction);
     }
 
@@ -29022,7 +29024,7 @@ exports.default = _react2.default.createClass({
             highlightErrors: this.props.highlightErrors,
             key: id,
             value: this.state.cellValues[id],
-            playable: cell !== UNPLAYABLE,
+            playable: cell !== _Unplayable2.default,
             correctValue: cell,
             size: 100 / size });
         }, this),
@@ -29032,7 +29034,7 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"../CrosswordStore":164,"../app-actions":165,"../models/Directions.js":177,"./Cell.jsx":169,"./Keyboard.jsx":174,"react":163}],171:[function(require,module,exports){
+},{"../CrosswordStore":164,"../app-actions":165,"../models/Directions.js":177,"../models/Unplayable.js":178,"./Cell.jsx":169,"./Keyboard.jsx":174,"react":163}],171:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29154,9 +29156,11 @@ var _Directions = require('../models/Directions.js');
 
 var _Directions2 = _interopRequireDefault(_Directions);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Unplayable = require('../models/Unplayable.js');
 
-var UNPLAYABLE = "#";
+var _Unplayable2 = _interopRequireDefault(_Unplayable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _react2.default.createClass({
   displayName: 'Crossword',
@@ -29344,7 +29348,7 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"../app-actions":165,"../models/CrosswordModel.js":176,"../models/Directions.js":177,"./Cells.jsx":170,"./ClueList.jsx":171,"./CurrentClue.jsx":173,"react":163}],173:[function(require,module,exports){
+},{"../app-actions":165,"../models/CrosswordModel.js":176,"../models/Directions.js":177,"../models/Unplayable.js":178,"./Cells.jsx":170,"./ClueList.jsx":171,"./CurrentClue.jsx":173,"react":163}],173:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29554,9 +29558,10 @@ module.exports = model;
 },{}],178:[function(require,module,exports){
 'use strict';
 
-(function (module) {
-    module.exports = '#';
-})(module);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = '#';
 
 },{}],179:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.

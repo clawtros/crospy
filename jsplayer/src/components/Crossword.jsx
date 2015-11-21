@@ -5,8 +5,7 @@ import CurrentClue from './CurrentClue.jsx';
 import CrosswordModel from '../models/CrosswordModel.js';
 import Actions from '../app-actions';
 import DIRECTIONS from '../models/Directions.js';
-
-var UNPLAYABLE = "#";
+import UNPLAYABLE from '../models/Unplayable.js';
 
 export default React.createClass({
 
