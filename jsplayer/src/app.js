@@ -28,7 +28,7 @@ var React = require('react'),
 
 function finalizeGrid(data) {
   var model = new CrosswordModel(data.cells, data.gridinfo.size, data);
-  ReactDOM.render(<Crossword model={model} rawData={data} title={data.gridinfo.name} clues={data.clues} numbered={data.numbered} cells={data.cells} size={data.gridinfo.size}/>, document.getElementById('app'));
+  ReactDOM.render(<Crossword crosswordId={data._id} model={model} rawData={data} title={data.gridinfo.name} clues={data.clues} numbered={data.numbered} cells={data.cells} size={data.gridinfo.size}/>, document.getElementById('app'));
   $('.loading').addClass('out');
   $('#app').removeClass('out');
   clearInterval(interval);

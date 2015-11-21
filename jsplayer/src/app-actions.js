@@ -2,10 +2,10 @@ var AppConstants = require('./app-constants'),
     AppDispatcher = require('./app-dispatcher');
 
 module.exports = {
-  keyEntered: function(cellId, character) {
+  keyEntered: function(cellId, character, room) {
     AppDispatcher.handleViewAction({
       actionType: AppConstants.KEY_ENTERED,
-      event: { cellId: cellId, character: character }
+      event: { cellId: cellId, character: character, room: room }
     });
   },
 

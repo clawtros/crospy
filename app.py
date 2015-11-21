@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from generator.generator import get_random, get_random_orig
 from pymongo import MongoClient
 from bson import ObjectId
-from flask_socketio import SocketIO, emit
+from flask_socketio import SocketIO, emit, join_room
 import json
 
 client = MongoClient()
@@ -13,10 +13,18 @@ app.debug = True
 socketio = SocketIO(app)
 
 @socketio.on('key pressed')
-def handle_key_pressed(json):
-    print('received json: ' + str(json))
-    emit('key pressed', json, broadcast=True)
-    return json
+def handle_key_pressed(data):
+    print data
+    emit('key pressed', data, broadcast=True, room=data['room'])
+    return data
+
+
+@socketio.on('join')
+def on_join(data):
+    print "JOIN", data
+    room = data['room']
+    join_room(room)
+    
 
 @app.route('/api/random/size/<int:size>/')
 def play_size(size):

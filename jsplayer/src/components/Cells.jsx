@@ -33,16 +33,16 @@ export default React.createClass({
 
   handleLetter: function(character) {
     var nextCell = this.nextCellFrom(this.props.activeCell, 1, this.props.direction);
-    Actions.keyEntered(this.props.activeCell, character);
+    Actions.keyEntered(this.props.activeCell, character, this.props.crosswordId);
     this.go(1);
   },
 
   handleBackspace: function() {
     if (this.state.cellValues[this.props.activeCell] == undefined) {
       this.go(-1);
-      Actions.keyEntered(this.props.activeCell, undefined);
+      Actions.keyEntered(this.props.activeCell, undefined, this.props.crosswordId);
     } else {
-      Actions.keyEntered(this.props.activeCell, undefined);
+      Actions.keyEntered(this.props.activeCell, undefined, this.props.crosswordId);
       this.go(-1);
     }
   },

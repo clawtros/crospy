@@ -70,6 +70,7 @@ var CrosswordStore = assign(EventEmitter.prototype, {
       case AppConstants.LOAD_CROSSWORD:
         _loadCrossword(action.crosswordId, function(data) {
           CrosswordStore.emit(AppConstants.LOADED_EVENT, data);
+          socket.emit("join", {"room": data._id});
         });
         break;
       case AppConstants.REQUEST_CROSSWORD:

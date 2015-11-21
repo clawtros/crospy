@@ -28592,6 +28592,7 @@ var CrosswordStore = assign(EventEmitter.prototype, {
       case AppConstants.LOAD_CROSSWORD:
         _loadCrossword(action.crosswordId, function (data) {
           CrosswordStore.emit(AppConstants.LOADED_EVENT, data);
+          socket.emit("join", { "room": data._id });
         });
         break;
       case AppConstants.REQUEST_CROSSWORD:
@@ -28617,10 +28618,10 @@ var AppConstants = require('./app-constants'),
     AppDispatcher = require('./app-dispatcher');
 
 module.exports = {
-  keyEntered: function keyEntered(cellId, character) {
+  keyEntered: function keyEntered(cellId, character, room) {
     AppDispatcher.handleViewAction({
       actionType: AppConstants.KEY_ENTERED,
-      event: { cellId: cellId, character: character }
+      event: { cellId: cellId, character: character, room: room }
     });
   },
 
@@ -28657,6 +28658,7 @@ var Dispatcher = require('flux').Dispatcher,
     assign = require('object-assign'),
     AppDispatcher = assign(new Dispatcher(), {
   handleViewAction: function handleViewAction(action) {
+    console.log(action);
     this.dispatch({
       source: "VIEW_ACTION",
       action: action
@@ -28705,7 +28707,7 @@ var React = require('react'),
 
 function finalizeGrid(data) {
   var model = new CrosswordModel(data.cells, data.gridinfo.size, data);
-  ReactDOM.render(React.createElement(_Crossword2.default, { model: model, rawData: data, title: data.gridinfo.name, clues: data.clues, numbered: data.numbered, cells: data.cells, size: data.gridinfo.size }), document.getElementById('app'));
+  ReactDOM.render(React.createElement(_Crossword2.default, { crosswordId: data._id, model: model, rawData: data, title: data.gridinfo.name, clues: data.clues, numbered: data.numbered, cells: data.cells, size: data.gridinfo.size }), document.getElementById('app'));
   $('.loading').addClass('out');
   $('#app').removeClass('out');
   clearInterval(interval);
@@ -28851,16 +28853,16 @@ exports.default = _react2.default.createClass({
 
   handleLetter: function handleLetter(character) {
     var nextCell = this.nextCellFrom(this.props.activeCell, 1, this.props.direction);
-    _appActions2.default.keyEntered(this.props.activeCell, character);
+    _appActions2.default.keyEntered(this.props.activeCell, character, this.props.crosswordId);
     this.go(1);
   },
 
   handleBackspace: function handleBackspace() {
     if (this.state.cellValues[this.props.activeCell] == undefined) {
       this.go(-1);
-      _appActions2.default.keyEntered(this.props.activeCell, undefined);
+      _appActions2.default.keyEntered(this.props.activeCell, undefined, this.props.crosswordId);
     } else {
-      _appActions2.default.keyEntered(this.props.activeCell, undefined);
+      _appActions2.default.keyEntered(this.props.activeCell, undefined, this.props.crosswordId);
       this.go(-1);
     }
   },
@@ -29288,6 +29290,7 @@ exports.default = _react2.default.createClass({
             makeActive: this.handleMakeActive,
             activeCell: this.state.activeCell,
             direction: this.state.direction,
+            crosswordId: this.props.crosswordId,
             skipWord: this.handleSkipWord,
             showKeyboard: this.state.showKeyboard,
             closeKeyboard: this.closeKeyboard,

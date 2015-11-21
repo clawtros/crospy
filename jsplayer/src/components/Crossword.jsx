@@ -127,6 +127,7 @@ export default React.createClass({
                      makeActive={this.handleMakeActive}
                      activeCell={this.state.activeCell}
                      direction={this.state.direction}
+                     crosswordId={this.props.crosswordId}
                      skipWord={this.handleSkipWord}
                      showKeyboard={this.state.showKeyboard}
                      closeKeyboard={this.closeKeyboard}
