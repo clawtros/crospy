@@ -1,0 +1,42 @@
+{
+  "name": "cruciverbalizer",
+  "version": "0.0.0",
+  "devDependencies": {
+    "browser-sync": "1.8.2",
+    "browserify": "3.44.2",
+    "del": "1.1.1",
+    "gulp": "3.8.10",
+    "gulp-babel": "^6.1.0",
+    "gulp-concat": "2.4.3",
+    "gulp-jshint": "1.9.0",
+    "gulp-less": "2.0.1",
+    "gulp-minify-css": "0.3.11",
+    "gulp-run": "1.6.5",
+    "gulp-traceur": "latest",
+    "gulp-uglify": "1.0.2",
+    "reactify": "0.17.1",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.0.0"
+  },
+  "paths": {
+    "less": "assets/less/*.less",
+    "js": "./app/**/*.js",
+    "jsx": "./app/**/*.jsx",
+    "app": "./app/app.js",
+    "html": "*.html"
+  },
+  "dest": {
+    "style": "style.css",
+    "app": "app.js",
+    "dist": "../crospy/static/dist"
+  },
+  "dependencies": {
+    "babelify": "^7.2.0",
+    "classnames": "^2.2.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "underscore": "^1.8.3"
+  }
+}

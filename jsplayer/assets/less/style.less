@@ -1,0 +1,274 @@
+
+.clearfix {
+    clear:both;
+    display: block;
+}
+
+.focused {
+    background-color: #ff9;
+}
+
+.cell {
+    float: left;
+    position: relative;
+    transition: background 0.25s;
+    border: 1px solid #111;
+}
+
+.cell-number {    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: #555;
+    font-size: 50%;
+}
+
+.cell-content {
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.input-cell {
+    background-color: gold;
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transition: transform 0.15s ease-out;
+    -webkit-transition: transform 0.15s ease-out;
+    z-index: 100;
+}
+
+.cell-list {
+    border: 1px solid black;
+}
+
+.unplayable {
+    background-color: #444;
+}
+
+.flex-centered {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+}
+
+.clue-list-container {
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+.clue-list {
+    padding: 0;
+    margin: 0;
+}
+
+.clue-number, .clue-phrase {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.clue-number {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.clue-container {
+    list-style-type:none;
+    word-break: break-word;
+    padding: 4px 10px;
+}
+
+.active-clue {
+    background-color: gold;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+div.container {
+    width: 100%;
+    max-width: 1080px;
+    padding: 5px;
+}
+
+.small-vertical-space {
+    height: 10px;
+}
+
+.clue-list-header {
+    margin: 0;
+    padding: 5px 10px;
+    border-width: 2px 0 1px 0;
+    border-color: black;
+    background-color: #444;
+    color: white;
+    border-style: solid;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+label {
+    cursor: pointer;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+}
+
+.loading, #app {
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.out {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.current-clue-text {
+    font-family: Georgia;
+    font-weight: normal;
+}
+
+.current-clue {
+    margin-top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.current-clue:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+
+div.highlighted {
+    background-color: #777;
+    transform: scale(0.9);
+}
+
+#loading_container {
+    width: 100vmin;
+    margin: 0 auto;
+}
+
+.foo {
+    width: 6.666vmin;
+    height: 6.666vmin;
+    float: right;
+    transition: background-color 0.5s, transform 0.5s;
+    -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
+}
+
+.loading-text {
+    z-index: 10000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    color: black;
+/*    text-shadow: 0 0 2px #ccc; */
+    
+}
+
+label {
+    margin-right: 20px;
+}
+
+
+
+@import "keyboard";
+
+@media only screen and (max-width:48em) {
+
+    
+    h3.current-clue {
+        white-space: initial;
+        position: fixed;
+        background: rgba(0,0,0,0.9);
+        color: white;
+        z-index: 10001;
+        padding: 20px;
+        margin: 0;
+        top: 0;
+        width: 100%;
+        left: 0;
+        font-size: 12pt;
+        height: 80px;
+        max-height: 80px;
+        overflow-y: auto;
+    }
+
+    label.keyboard-label {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10001;
+        color: white;
+    }
+
+    div.cell {
+        transition: initial;
+    }
+    
+    div.cell-list {
+        margin-top: 80px;
+    }
+}
+
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 5px;
+}

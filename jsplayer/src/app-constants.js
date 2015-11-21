@@ -1,0 +1,8 @@
+module.exports = {
+  KEY_ENTERED: "KEY_ENTERED",
+  LOAD_CROSSWORD: "LOAD_CROSSWORD",
+  REQUEST_CROSSWORD: "REQUEST_CROSSWORD",
+  GENERATED_EVENT: 'generated',
+  LOADED_EVENT: 'loaded',
+  CHANGE_EVENT: 'change'
+}
