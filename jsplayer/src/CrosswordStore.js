@@ -76,6 +76,7 @@ var CrosswordStore = assign(EventEmitter.prototype, {
       case AppConstants.REQUEST_CROSSWORD:
         _generateCrossword(function(data) {
           CrosswordStore.emit(AppConstants.GENERATED_EVENT, data);
+          socket.emit("join", {"room": data._id});
         });
         break;
     }

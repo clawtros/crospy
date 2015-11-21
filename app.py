@@ -24,7 +24,7 @@ def handle_key_pressed(data):
 
 @socketio.on('join')
 def on_join(data):
-    print "JOIN", data
+    print "OMGJOIN", data['room']
     room = data['room']
     join_room(room)
     for data in roomdata[room]:
