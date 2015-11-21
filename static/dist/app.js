@@ -28586,6 +28586,7 @@ var CrosswordStore = assign(EventEmitter.prototype, {
     switch (action.actionType) {
       case AppConstants.KEY_ENTERED:
         CrosswordStore.emit(AppConstants.CHANGE_EVENT, action.event);
+        socket.emit("key pressed", action.event);
         break;
 
       case AppConstants.LOAD_CROSSWORD:
@@ -28600,6 +28601,11 @@ var CrosswordStore = assign(EventEmitter.prototype, {
         break;
     }
   })
+});
+
+socket.on('key pressed', function (event) {
+  console.log(event);
+  CrosswordStore.emit(AppConstants.CHANGE_EVENT, event);
 });
 
 module.exports = CrosswordStore;
@@ -28829,11 +28835,8 @@ exports.default = _react2.default.createClass({
 
   handleChange: function handleChange(changeEvent) {
     var values = this.state.cellValues;
-    console.log("BEFORE", values);
-
     values[changeEvent.cellId] = changeEvent.character;
     this.setState({ cellValues: values });
-    console.log(values, changeEvent);
   },
 
   componentWillMount: function componentWillMount() {

@@ -17,12 +17,8 @@ export default React.createClass({
 
   handleChange: function (changeEvent) {
     var values = this.state.cellValues;
-    console.log("BEFORE", values);
-
     values[changeEvent.cellId] = changeEvent.character;
     this.setState({cellValues: values});
-    console.log(values, changeEvent);
-
   },
   
   componentWillMount: function() {

@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from generator.generator import get_random, get_random_orig
 from pymongo import MongoClient
 from bson import ObjectId
+from flask_socketio import SocketIO, emit
 import json
 
 client = MongoClient()
@@ -9,6 +10,13 @@ db = client.crosswords
 
 app = Flask(__name__)
 app.debug = True
+socketio = SocketIO(app)
+
+@socketio.on('key pressed')
+def handle_key_pressed(json):
+    print('received json: ' + str(json))
+    emit('key pressed', json, broadcast=True)
+    return json
 
 @app.route('/api/random/size/<int:size>/')
 def play_size(size):
@@ -41,4 +49,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    socketio.run(app)
