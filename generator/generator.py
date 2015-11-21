@@ -7,7 +7,7 @@ import random
 from generator_conf import settings
 
 
-wordlist = MySQLWordList(
+mysql_wordlist = MySQLWordList(
     username=settings['database'].get('user'),
     password=settings['database'].get('password'),
     host=settings['database'].get('host'),
@@ -15,7 +15,7 @@ wordlist = MySQLWordList(
     table_name=settings['database'].get('table_name'),
     encoding=settings['database'].get('encoding')
 )
-solver = MinionSolver(None, wordlist, settings['minion_path'])
+solver = MinionSolver(None, mysql_wordlist, settings['minion_path'])
 grids = cPickle.loads(open(settings['grid_path'], "r").read())
 
 # TODO: where should this go?
@@ -23,7 +23,7 @@ def get_clues(numbered_words):
     result = {}
 
     for n, t in numbered_words:
-        clue = wordlist.define(t)
+        clue = mysql_wordlist.define(t)
         result[n] = {
             "clue_number": n,
             "clue_text": clue.encode('utf-8')
@@ -55,7 +55,7 @@ def json_grid(grid):
 
 def get_random():
     grid = Grid(initial_data=random.choice(grids))
-    solver.wordlist = wordlist
+    solver.wordlist = mysql_wordlist
     solver.grid = grid
     return json_grid(solver.solve())
 
@@ -63,7 +63,7 @@ def get_random():
 def get_random_orig(size=13):
     grid = Grid(size=size)
     grid = random_grid(grid, 0.2)
-    solver.wordlist = wordlist
+    solver.wordlist = mysql_wordlist
     solver.grid = grid
     result = solver.solve()
     return json_grid(result)
