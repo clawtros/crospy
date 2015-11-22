@@ -70,13 +70,15 @@ var CrosswordStore = assign(EventEmitter.prototype, {
       case AppConstants.LOAD_CROSSWORD:
         _loadCrossword(action.crosswordId, function(data) {
           CrosswordStore.emit(AppConstants.LOADED_EVENT, data);
+          console.log("emitting join");
           socket.emit("join", {"room": data._id});
         });
         break;
+        
       case AppConstants.REQUEST_CROSSWORD:
         _generateCrossword(function(data) {
           CrosswordStore.emit(AppConstants.GENERATED_EVENT, data);
-          socket.emit("join", {"room": data._id});
+          socket.emit("create room", {"room": data._id});
         });
         break;
     }
@@ -84,8 +86,8 @@ var CrosswordStore = assign(EventEmitter.prototype, {
 });
 
 socket.on('key pressed', function(event) {
-  console.log(event);
-  CrosswordStore.emit(AppConstants.CHANGE_EVENT, event);  
+  console.log("KEY", event);
+  CrosswordStore.emit(AppConstants.CHANGE_EVENT, event);
 });
 
 module.exports = CrosswordStore;
