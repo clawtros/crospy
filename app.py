@@ -2,7 +2,6 @@ from flask import Flask, render_template
 from generator.generator import get_random, get_random_orig
 from pymongo import MongoClient
 from bson import ObjectId
-from flask_socketio import SocketIO, emit, join_room
 from collections import defaultdict
 import json
 
@@ -11,23 +10,8 @@ db = client.crosswords
 
 app = Flask(__name__)
 app.debug = True
-socketio = SocketIO(app)
 
 roomdata = defaultdict(list)
-
-@socketio.on('key pressed')
-def handle_key_pressed(data):
-    roomdata[data['room']].append(data)
-    emit('key pressed', data, broadcast=True, room=data['room'])
-    return data
-
-
-@socketio.on('join')
-def on_join(data):
-    room = data['room']
-    join_room(room)
-    for data in roomdata[room]:
-        emit('key pressed', data)
         
     
 
@@ -62,4 +46,4 @@ def index():
 
 
 if __name__ == "__main__":
-    socketio.run(app)
+    app.run()
