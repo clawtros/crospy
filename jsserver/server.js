@@ -1,5 +1,6 @@
 var io = require('socket.io').listen(3000),
-    keyPresses = {};
+    keyPresses = {},
+    keySummary = {};
 
 function getRoomPresses(room) {
   if (keyPresses[room] === undefined) {
@@ -9,11 +10,10 @@ function getRoomPresses(room) {
 }
 
 function getRoomSummary(room) {
-  var summary = {};
-  for (var press of getRoomPresses(data.room)) {
-    summary[press.cellId] = press;
+  if (keySummary[room] === undefined) {
+    keySummary[room] = {};
   }
-  return summary;
+  return keySummary[room];
 }
 
 io.sockets.on('connection', function (socket) {
@@ -21,13 +21,12 @@ io.sockets.on('connection', function (socket) {
   socket.on('key pressed', function(data) {
     socket.broadcast.to(data.room).emit('key pressed', data);
     getRoomPresses(data.room).push(data);
+    getRoomSummary(data.room)[data.cellId] = data;
   });
 
   socket.on('join', function(data) {
     socket.join(data.room);
-    for (var press of getRoomPresses(data.room)) {
-      io.to(data.room).emit('key pressed', press);  
-    }
+    socket.emit('key summary', getRoomSummary(data.room));
   });
 
   socket.on('create room', function(data) {
