@@ -6,6 +6,7 @@ import CrosswordModel from '../models/CrosswordModel.js';
 import Actions from '../app-actions';
 import DIRECTIONS from '../models/Directions.js';
 import UNPLAYABLE from '../models/Unplayable.js';
+import Chat from './Chat.jsx';
 
 export default React.createClass({
 
@@ -108,6 +109,7 @@ export default React.createClass({
     render: function() {
       return (
         <div>
+          <Chat crosswordId={this.props.crosswordId} />
           <div className="row">
             <div className="col-xs-12">
               {this.state.activeCell !== undefined ? 

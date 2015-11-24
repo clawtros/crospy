@@ -47,6 +47,10 @@ var CrosswordStore = assign(EventEmitter.prototype, {
     this.emit(AppConstants.CHANGE_EVENT);
   },
 
+  addEventListener: function(event, callback) {
+    this.on(event, callback);
+  },  
+
   addChangeListener: function(callback) {
     this.on(AppConstants.CHANGE_EVENT, callback);
   },
@@ -78,11 +82,18 @@ var CrosswordStore = assign(EventEmitter.prototype, {
       case AppConstants.REQUEST_CROSSWORD:
         _generateCrossword(function(data) {
           CrosswordStore.emit(AppConstants.GENERATED_EVENT, data);
-          socket.emit("create room", {"room": data._id});
+          socket.emit("join", {"room": data._id});
         });
         break;
     }
   })
+});
+
+
+// TODO: Move all this socket stuff out and make it optional
+socket.on('roster', function(members) {
+  console.log("ROSTER", members);
+  CrosswordStore.emit(AppConstants.ROSTER_UPDATE, members);
 });
 
 socket.on('key summary', function(events) {
