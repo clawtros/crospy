@@ -29161,9 +29161,13 @@ exports.default = _react2.default.createClass({
         'clue-container': true,
         'active-clue': parseInt(clueId) === activeClue
       }),
-          entered = this.props.model.wordAt(this.props.model.lookupTable.numberToCell[clueId] - 1, this.props.directionEnum).map(function (n) {
+          word = this.props.model.wordAt(this.props.model.lookupTable.numberToCell[clueId] - 1, this.props.directionEnum),
+          entered = word.map(function (n) {
         return _this.props.cellValues[n] || '_';
-      }).join("");
+      }),
+          showEntered = entered.filter(function (l) {
+        return l != '_';
+      }).length > 0;
 
       return _react2.default.createElement(
         'li',
@@ -29177,9 +29181,8 @@ exports.default = _react2.default.createClass({
             clue.clue_number
           ),
           clue.clue_text,
-          ' [',
-          entered,
-          ']'
+          ' ',
+          showEntered ? '[' + entered.join("") + ']' : ''
         )
       );
     }, this);

@@ -28,16 +28,18 @@ export default React.createClass({
                 'clue-container': true,
                 'active-clue': parseInt(clueId) === activeClue
               }),
-              entered = this.props.model.wordAt(
+              word = this.props.model.wordAt(
                 this.props.model.lookupTable.numberToCell[clueId] - 1,
                 this.props.directionEnum
-              ).map((n) => this.props.cellValues[n] || '_').join("");
+              ),
+              entered = word.map((n) => this.props.cellValues[n] || '_'),
+              showEntered = entered.filter((l) => l != '_').length > 0;
 
           return (
-            <li className={classes}  onClick={this.handleClick.bind(this, clueId, this.props.directionEnum)} key={this.props.direction + "_" + clueId}>
+            <li className={classes} onClick={this.handleClick.bind(this, clueId, this.props.directionEnum)} key={this.props.direction + "_" + clueId}>
               <div className="clue-phrase">
                 <div className="clue-number">{clue.clue_number}</div>
-                {clue.clue_text} [{entered}]
+                {clue.clue_text} { showEntered ? '['+entered.join("")+']' : ''}
               </div>
             </li>
           )
