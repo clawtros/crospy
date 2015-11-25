@@ -29165,16 +29165,21 @@ exports.default = _react2.default.createClass({
           entered = word.map(function (n) {
         return _this.props.cellValues[n] || '_';
       }),
-          showEntered = entered.filter(function (l) {
+          enteredLetters = entered.filter(function (l) {
         return l != '_';
-      }).length > 0;
+      }),
+          showEntered = enteredLetters.length > 0,
+          strikeThrough = enteredLetters.length == word.length,
+          phraseStyle = {
+        textDecoration: strikeThrough ? 'line-through' : 'none'
+      };
 
       return _react2.default.createElement(
         'li',
         { className: classes, onClick: this.handleClick.bind(this, clueId, this.props.directionEnum), key: this.props.direction + "_" + clueId },
         _react2.default.createElement(
           'div',
-          { className: 'clue-phrase' },
+          { className: 'clue-phrase', style: phraseStyle },
           _react2.default.createElement(
             'div',
             { className: 'clue-number' },

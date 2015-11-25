@@ -33,11 +33,16 @@ export default React.createClass({
                 this.props.directionEnum
               ),
               entered = word.map((n) => this.props.cellValues[n] || '_'),
-              showEntered = entered.filter((l) => l != '_').length > 0;
+              enteredLetters = entered.filter((l) => l != '_'),
+              showEntered = enteredLetters.length > 0,
+              strikeThrough = enteredLetters.length == word.length,
+              phraseStyle = {
+                textDecoration: strikeThrough ? 'line-through' : 'none'
+              };
 
           return (
             <li className={classes} onClick={this.handleClick.bind(this, clueId, this.props.directionEnum)} key={this.props.direction + "_" + clueId}>
-              <div className="clue-phrase">
+              <div className="clue-phrase" style={ phraseStyle }>
                 <div className="clue-number">{clue.clue_number}</div>
                 {clue.clue_text} { showEntered ? '['+entered.join("")+']' : ''}
               </div>
