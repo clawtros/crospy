@@ -29047,7 +29047,7 @@ exports.default = _react2.default.createClass({
             selected: id == this.props.activeCell,
             highlightErrors: this.props.highlightErrors,
             key: id,
-            playerEntered: this.props.cellSources[id] === undefined || this.props.cellSources[id] == this.props.playerId,
+            playerEntered: !!this.props.cellSources[id] || this.props.cellSources[id] == this.props.playerId,
             value: this.props.cellValues[id],
             playable: cell !== _Unplayable2.default,
             correctValue: cell,
