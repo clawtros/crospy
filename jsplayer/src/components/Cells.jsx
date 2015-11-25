@@ -192,7 +192,8 @@ export default React.createClass({
                      selected={id == this.props.activeCell}
                      highlightErrors={this.props.highlightErrors}
                      key={id}
-                     playerEntered={!!this.props.cellSources[id] ||
+                     playerEntered={this.props.cellSources[id] === undefined ||
+                                    this.props.cellValues[id] === undefined ||
                        this.props.cellSources[id] == this.props.playerId}
                      value={this.props.cellValues[id]}
                      playable={cell !== UNPLAYABLE}
