@@ -11,6 +11,7 @@ export default React.createClass({
         },
         classes = classNames({
           'cell': true,
+          'othered': !this.props.playerEntered,
           'incorrect': this.props.value && this.props.highlightErrors && this.props.value.toLowerCase() != this.props.correctValue.toLowerCase(),
           'input-cell': this.props.selected,
           'flex-centered': true,

@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import $ from 'jquery';
 import ReactDOM from 'react-dom';
+import CrosswordStore from '../CrosswordStore';
 
 export default React.createClass({
     handleClick: function(clueId) {
@@ -12,6 +13,7 @@ export default React.createClass({
       var node = ReactDOM.findDOMNode(this),
           container = $(node).find('.clue-list-container'),
           activeClue = container.find('.active-clue');
+
       if (activeClue.length > 0) {
         var newTop = activeClue.offset().top - container.offset().top - container.height() / 2 + activeClue.height() / 2;
         container.scrollTop(container.scrollTop() + newTop);

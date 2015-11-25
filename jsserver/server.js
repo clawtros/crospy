@@ -27,9 +27,12 @@ io.sockets.on('connection', function (socket) {
   }
 
   socket.on('key pressed', function(data) {
-    socket.broadcast.to(data.room).emit('key pressed', data);
-    getRoomPresses(data.room).push(data);
-    getRoomSummary(data.room)[data.cellId] = data;
+    var summary = getRoomSummary(data.room);
+    if (!summary[data.cellId] || summary[data.cellId].character != data.character) {
+      socket.broadcast.to(data.room).emit('key pressed', data);
+      getRoomPresses(data.room).push(data);
+      summary[data.cellId] = data;
+    }
   });
 
   socket.on('join', function(data) {

@@ -2,28 +2,12 @@ import React from 'react';
 import Keyboard from './Keyboard.jsx';
 import Cell from './Cell.jsx';
 import Actions from '../app-actions';
-import CrosswordStore from '../CrosswordStore';
 import DIRECTIONS from '../models/Directions.js';
 import UNPLAYABLE from '../models/Unplayable.js';
 
 
 export default React.createClass({
-  getInitialState: function() {
-    return {
-      direction: DIRECTIONS.ACROSS,
-      cellValues: CrosswordStore.getValues(this.props.crosswordId)
-    }
-  },
 
-  handleChange: function (changeEvent) {
-    var values = this.state.cellValues;
-    values[changeEvent.cellId] = changeEvent.character;
-    this.setState({cellValues: values});
-  },
-  
-  componentWillMount: function() {
-    CrosswordStore.addChangeListener(this.handleChange);
-  },
   
   makeActive: function(id) {
     if (this.props.values[id] !== UNPLAYABLE) {
@@ -33,23 +17,27 @@ export default React.createClass({
 
   handleLetter: function(character) {
     var nextCell = this.nextCellFrom(this.props.activeCell, 1, this.props.direction);
-    Actions.keyEntered(this.props.activeCell, character, this.props.crosswordId);
+    Actions.keyEntered(
+      this.props.activeCell,
+      character,
+      this.props.crosswordId,
+      this.props.playerId);
     this.go(1);
   },
 
   handleBackspace: function() {
-    if (this.state.cellValues[this.props.activeCell] == undefined) {
+    if (this.props.cellValues[this.props.activeCell] == undefined) {
       this.go(-1);
-      Actions.keyEntered(this.props.activeCell, undefined, this.props.crosswordId);
+      Actions.keyEntered(this.props.activeCell, undefined, this.props.crosswordId, this.props.playerId);
     } else {
-      Actions.keyEntered(this.props.activeCell, undefined, this.props.crosswordId);
+      Actions.keyEntered(this.props.activeCell, undefined, this.props.crosswordId, this.props.playerId);
       this.go(-1);
     }
   },
   
   handleKeyDown: function(e) {
     if (this.props.activeCell !== undefined) {
-      var values = this.state.cellValues,
+      var values = this.props.cellValues,
           direction = this.props.direction;
       
       if (e.which == 8) {
@@ -204,7 +192,9 @@ export default React.createClass({
                      selected={id == this.props.activeCell}
                      highlightErrors={this.props.highlightErrors}
                      key={id}
-                     value={this.state.cellValues[id]}
+                     playerEntered={this.props.cellSources[id] === undefined ||
+                       this.props.cellSources[id] == this.props.playerId}
+                     value={this.props.cellValues[id]}
                      playable={cell !== UNPLAYABLE}
                      correctValue={cell}
                      size={100 / size} />);

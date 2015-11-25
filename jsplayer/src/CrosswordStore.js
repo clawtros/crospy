@@ -58,10 +58,6 @@ var CrosswordStore = assign(EventEmitter.prototype, {
   removeChangeListener: function(callback) {
     this.removeListener(AppConstants.CHANGE_EVENT, callback);
   },
-
-  getValues: function(crosswordId) {
-    return [];
-  },
   
   dispatcherIndex: AppDispatcher.register(function(payload) {
     var action = payload.action;

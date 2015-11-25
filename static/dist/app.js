@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/adam/projects/crospy2/jsplayer/node_modules/classnames/index.js":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/adam/projects/crospy/jsplayer/node_modules/classnames/index.js":[function(require,module,exports){
 /*!
   Copyright (c) 2015 Jed Watson.
   Licensed under the MIT License (MIT), see
@@ -48,7 +48,7 @@
 	}
 }());
 
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/EventListener.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/EventListener.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -135,7 +135,7 @@ var EventListener = {
 
 module.exports = EventListener;
 }).call(this,require('_process'))
-},{"./emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js":[function(require,module,exports){
+},{"./emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -172,7 +172,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/camelize.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/camelize.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -205,7 +205,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/camelizeStyleName.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/camelizeStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -246,7 +246,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/camelize.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/containsNode.js":[function(require,module,exports){
+},{"./camelize":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/camelize.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/containsNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -302,7 +302,7 @@ function containsNode(_x, _x2) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/isTextNode.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/createArrayFromMixed.js":[function(require,module,exports){
+},{"./isTextNode":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/isTextNode.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/createArrayFromMixed.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -388,7 +388,7 @@ function createArrayFromMixed(obj) {
 }
 
 module.exports = createArrayFromMixed;
-},{"./toArray":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/toArray.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/createNodesFromMarkup.js":[function(require,module,exports){
+},{"./toArray":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/toArray.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/createNodesFromMarkup.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -475,7 +475,7 @@ function createNodesFromMarkup(markup, handleScript) {
 
 module.exports = createNodesFromMarkup;
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","./createArrayFromMixed":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/createArrayFromMixed.js","./getMarkupWrap":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/getMarkupWrap.js","./invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","./createArrayFromMixed":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/createArrayFromMixed.js","./getMarkupWrap":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/getMarkupWrap.js","./invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -514,7 +514,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyObject.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyObject.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -537,7 +537,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = emptyObject;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/focusNode.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/focusNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -564,7 +564,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/getActiveElement.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/getActiveElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -598,7 +598,7 @@ function getActiveElement() /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/getMarkupWrap.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/getMarkupWrap.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -696,7 +696,7 @@ function getMarkupWrap(nodeName) {
 
 module.exports = getMarkupWrap;
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","./invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/getUnboundedScrollPosition.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","./invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/getUnboundedScrollPosition.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -735,7 +735,7 @@ function getUnboundedScrollPosition(scrollable) {
 }
 
 module.exports = getUnboundedScrollPosition;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/hyphenate.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/hyphenate.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -769,7 +769,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/hyphenateStyleName.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/hyphenateStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -809,7 +809,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/hyphenate.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js":[function(require,module,exports){
+},{"./hyphenate":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/hyphenate.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -861,7 +861,7 @@ var invariant = function (condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/isNode.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/isNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -885,7 +885,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/isTextNode.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/isTextNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -911,7 +911,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/isNode.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyMirror.js":[function(require,module,exports){
+},{"./isNode":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/isNode.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyMirror.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -962,7 +962,7 @@ var keyMirror = function (obj) {
 
 module.exports = keyMirror;
 }).call(this,require('_process'))
-},{"./invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyOf.js":[function(require,module,exports){
+},{"./invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyOf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -998,7 +998,7 @@ var keyOf = function (oneKeyObj) {
 };
 
 module.exports = keyOf;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/mapObject.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/mapObject.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1050,7 +1050,7 @@ function mapObject(object, callback, context) {
 }
 
 module.exports = mapObject;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/memoizeStringOnly.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/memoizeStringOnly.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1082,7 +1082,7 @@ function memoizeStringOnly(callback) {
 }
 
 module.exports = memoizeStringOnly;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/performance.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/performance.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1106,7 +1106,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = performance || {};
-},{"./ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/performanceNow.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/performanceNow.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1136,7 +1136,7 @@ if (!curPerformance || !curPerformance.now) {
 var performanceNow = curPerformance.now.bind(curPerformance);
 
 module.exports = performanceNow;
-},{"./performance":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/performance.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/shallowEqual.js":[function(require,module,exports){
+},{"./performance":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/performance.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/shallowEqual.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1187,7 +1187,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/toArray.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/toArray.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1247,7 +1247,7 @@ function toArray(obj) {
 
 module.exports = toArray;
 }).call(this,require('_process'))
-},{"./invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js":[function(require,module,exports){
+},{"./invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -1307,7 +1307,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 }).call(this,require('_process'))
-},{"./emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/flux/index.js":[function(require,module,exports){
+},{"./emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/flux/index.js":[function(require,module,exports){
 /**
  * Copyright (c) 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -1319,7 +1319,7 @@ module.exports = warning;
 
 module.exports.Dispatcher = require('./lib/Dispatcher');
 
-},{"./lib/Dispatcher":"/Users/adam/projects/crospy2/jsplayer/node_modules/flux/lib/Dispatcher.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/flux/lib/Dispatcher.js":[function(require,module,exports){
+},{"./lib/Dispatcher":"/Users/adam/projects/crospy/jsplayer/node_modules/flux/lib/Dispatcher.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/flux/lib/Dispatcher.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright (c) 2014-2015, Facebook, Inc.
@@ -1553,7 +1553,7 @@ var Dispatcher = (function () {
 
 module.exports = Dispatcher;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/flux/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/flux/node_modules/fbjs/lib/invariant.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/flux/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/flux/node_modules/fbjs/lib/invariant.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1605,7 +1605,7 @@ var invariant = function (condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/jquery/dist/jquery.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/jquery/dist/jquery.js":[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.4
  * http://jquery.com/
@@ -10817,7 +10817,7 @@ return jQuery;
 
 }));
 
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/object-assign/index.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/object-assign/index.js":[function(require,module,exports){
 /* eslint-disable no-unused-vars */
 'use strict';
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -10858,12 +10858,12 @@ module.exports = Object.assign || function (target, source) {
 	return to;
 };
 
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react-dom/index.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react-dom/index.js":[function(require,module,exports){
 'use strict';
 
 module.exports = require('react/lib/ReactDOM');
 
-},{"react/lib/ReactDOM":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOM.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/AutoFocusUtils.js":[function(require,module,exports){
+},{"react/lib/ReactDOM":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOM.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/AutoFocusUtils.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10900,7 +10900,7 @@ var AutoFocusUtils = {
 };
 
 module.exports = AutoFocusUtils;
-},{"./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./findDOMNode":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/findDOMNode.js","fbjs/lib/focusNode":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/focusNode.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/BeforeInputEventPlugin.js":[function(require,module,exports){
+},{"./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./findDOMNode":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/findDOMNode.js","fbjs/lib/focusNode":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/focusNode.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/BeforeInputEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015 Facebook, Inc.
  * All rights reserved.
@@ -11306,7 +11306,7 @@ var BeforeInputEventPlugin = {
 };
 
 module.exports = BeforeInputEventPlugin;
-},{"./EventConstants":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPropagators.js","./FallbackCompositionState":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/FallbackCompositionState.js","./SyntheticCompositionEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticCompositionEvent.js","./SyntheticInputEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticInputEvent.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/CSSProperty.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPropagators.js","./FallbackCompositionState":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/FallbackCompositionState.js","./SyntheticCompositionEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticCompositionEvent.js","./SyntheticInputEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticInputEvent.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/CSSProperty.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -11446,7 +11446,7 @@ var CSSProperty = {
 };
 
 module.exports = CSSProperty;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/CSSPropertyOperations.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/CSSPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -11624,7 +11624,7 @@ ReactPerf.measureMethods(CSSPropertyOperations, 'CSSPropertyOperations', {
 
 module.exports = CSSPropertyOperations;
 }).call(this,require('_process'))
-},{"./CSSProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/CSSProperty.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./dangerousStyleValue":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/dangerousStyleValue.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/camelizeStyleName":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/camelizeStyleName.js","fbjs/lib/hyphenateStyleName":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/hyphenateStyleName.js","fbjs/lib/memoizeStringOnly":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/memoizeStringOnly.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/CallbackQueue.js":[function(require,module,exports){
+},{"./CSSProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/CSSProperty.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./dangerousStyleValue":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/dangerousStyleValue.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/camelizeStyleName":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/camelizeStyleName.js","fbjs/lib/hyphenateStyleName":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/hyphenateStyleName.js","fbjs/lib/memoizeStringOnly":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/memoizeStringOnly.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/CallbackQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -11720,7 +11720,7 @@ PooledClass.addPoolingTo(CallbackQueue);
 
 module.exports = CallbackQueue;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/PooledClass.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ChangeEventPlugin.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/PooledClass.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ChangeEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -12042,7 +12042,7 @@ var ChangeEventPlugin = {
 };
 
 module.exports = ChangeEventPlugin;
-},{"./EventConstants":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPropagators.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventTarget.js","./isEventSupported":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/isEventSupported.js","./isTextInputElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ClientReactRootIndex.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPropagators.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventTarget.js","./isEventSupported":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/isEventSupported.js","./isTextInputElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ClientReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -12066,7 +12066,7 @@ var ClientReactRootIndex = {
 };
 
 module.exports = ClientReactRootIndex;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMChildrenOperations.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMChildrenOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12198,7 +12198,7 @@ ReactPerf.measureMethods(DOMChildrenOperations, 'DOMChildrenOperations', {
 
 module.exports = DOMChildrenOperations;
 }).call(this,require('_process'))
-},{"./Danger":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Danger.js","./ReactMultiChildUpdateTypes":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./setInnerHTML":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/setInnerHTML.js","./setTextContent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/setTextContent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMProperty.js":[function(require,module,exports){
+},{"./Danger":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Danger.js","./ReactMultiChildUpdateTypes":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./setInnerHTML":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/setInnerHTML.js","./setTextContent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/setTextContent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMProperty.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12435,7 +12435,7 @@ var DOMProperty = {
 
 module.exports = DOMProperty;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMPropertyOperations.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12663,7 +12663,7 @@ ReactPerf.measureMethods(DOMPropertyOperations, 'DOMPropertyOperations', {
 
 module.exports = DOMPropertyOperations;
 }).call(this,require('_process'))
-},{"./DOMProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMProperty.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./quoteAttributeValueForBrowser":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/quoteAttributeValueForBrowser.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Danger.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMProperty.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./quoteAttributeValueForBrowser":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/quoteAttributeValueForBrowser.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Danger.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12811,7 +12811,7 @@ var Danger = {
 
 module.exports = Danger;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/createNodesFromMarkup":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/createNodesFromMarkup.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/getMarkupWrap":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/getMarkupWrap.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DefaultEventPluginOrder.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/createNodesFromMarkup":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/createNodesFromMarkup.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/getMarkupWrap":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/getMarkupWrap.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DefaultEventPluginOrder.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -12839,7 +12839,7 @@ var keyOf = require('fbjs/lib/keyOf');
 var DefaultEventPluginOrder = [keyOf({ ResponderEventPlugin: null }), keyOf({ SimpleEventPlugin: null }), keyOf({ TapEventPlugin: null }), keyOf({ EnterLeaveEventPlugin: null }), keyOf({ ChangeEventPlugin: null }), keyOf({ SelectEventPlugin: null }), keyOf({ BeforeInputEventPlugin: null })];
 
 module.exports = DefaultEventPluginOrder;
-},{"fbjs/lib/keyOf":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EnterLeaveEventPlugin.js":[function(require,module,exports){
+},{"fbjs/lib/keyOf":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EnterLeaveEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -12964,7 +12964,7 @@ var EnterLeaveEventPlugin = {
 };
 
 module.exports = EnterLeaveEventPlugin;
-},{"./EventConstants":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./SyntheticMouseEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./SyntheticMouseEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13057,7 +13057,7 @@ var EventConstants = {
 };
 
 module.exports = EventConstants;
-},{"fbjs/lib/keyMirror":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyMirror.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginHub.js":[function(require,module,exports){
+},{"fbjs/lib/keyMirror":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyMirror.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginHub.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13339,7 +13339,7 @@ var EventPluginHub = {
 
 module.exports = EventPluginHub;
 }).call(this,require('_process'))
-},{"./EventPluginRegistry":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginRegistry.js","./EventPluginUtils":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginUtils.js","./ReactErrorUtils":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactErrorUtils.js","./accumulateInto":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/forEachAccumulated.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginRegistry.js":[function(require,module,exports){
+},{"./EventPluginRegistry":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginRegistry.js","./EventPluginUtils":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginUtils.js","./ReactErrorUtils":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactErrorUtils.js","./accumulateInto":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/forEachAccumulated.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginRegistry.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13562,7 +13562,7 @@ var EventPluginRegistry = {
 
 module.exports = EventPluginRegistry;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginUtils.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13767,7 +13767,7 @@ var EventPluginUtils = {
 
 module.exports = EventPluginUtils;
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js","./ReactErrorUtils":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactErrorUtils.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPropagators.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js","./ReactErrorUtils":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactErrorUtils.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPropagators.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13905,7 +13905,7 @@ var EventPropagators = {
 
 module.exports = EventPropagators;
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginHub.js","./accumulateInto":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/forEachAccumulated.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/FallbackCompositionState.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginHub.js","./accumulateInto":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/forEachAccumulated.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/FallbackCompositionState.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14001,7 +14001,7 @@ assign(FallbackCompositionState.prototype, {
 PooledClass.addPoolingTo(FallbackCompositionState);
 
 module.exports = FallbackCompositionState;
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/PooledClass.js","./getTextContentAccessor":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getTextContentAccessor.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/HTMLDOMPropertyConfig.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/PooledClass.js","./getTextContentAccessor":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getTextContentAccessor.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/HTMLDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14234,7 +14234,7 @@ var HTMLDOMPropertyConfig = {
 };
 
 module.exports = HTMLDOMPropertyConfig;
-},{"./DOMProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMProperty.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/LinkedValueUtils.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMProperty.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/LinkedValueUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -14371,7 +14371,7 @@ var LinkedValueUtils = {
 
 module.exports = LinkedValueUtils;
 }).call(this,require('_process'))
-},{"./ReactPropTypeLocations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js","./ReactPropTypes":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypes.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js":[function(require,module,exports){
+},{"./ReactPropTypeLocations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js","./ReactPropTypes":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypes.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -14419,7 +14419,7 @@ function assign(target, sources) {
 }
 
 module.exports = assign;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/PooledClass.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/PooledClass.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -14541,7 +14541,7 @@ var PooledClass = {
 
 module.exports = PooledClass;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/React.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/React.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14582,7 +14582,7 @@ React.__SECRET_DOM_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactDOM;
 React.__SECRET_DOM_SERVER_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactDOMServer;
 
 module.exports = React;
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactDOM":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOM.js","./ReactDOMServer":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMServer.js","./ReactIsomorphic":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactIsomorphic.js","./deprecated":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/deprecated.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactBrowserComponentMixin.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactDOM":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOM.js","./ReactDOMServer":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMServer.js","./ReactIsomorphic":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactIsomorphic.js","./deprecated":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/deprecated.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactBrowserComponentMixin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -14621,7 +14621,7 @@ var ReactBrowserComponentMixin = {
 
 module.exports = ReactBrowserComponentMixin;
 }).call(this,require('_process'))
-},{"./ReactInstanceMap":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./findDOMNode":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/findDOMNode.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js":[function(require,module,exports){
+},{"./ReactInstanceMap":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./findDOMNode":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/findDOMNode.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14946,7 +14946,7 @@ ReactPerf.measureMethods(ReactBrowserEventEmitter, 'ReactBrowserEventEmitter', {
 });
 
 module.exports = ReactBrowserEventEmitter;
-},{"./EventConstants":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginRegistry.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactEventEmitterMixin":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEventEmitterMixin.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./ViewportMetrics":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ViewportMetrics.js","./isEventSupported":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/isEventSupported.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactChildReconciler.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginRegistry.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactEventEmitterMixin":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEventEmitterMixin.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./ViewportMetrics":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ViewportMetrics.js","./isEventSupported":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/isEventSupported.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactChildReconciler.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -15071,7 +15071,7 @@ var ReactChildReconciler = {
 
 module.exports = ReactChildReconciler;
 }).call(this,require('_process'))
-},{"./ReactReconciler":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconciler.js","./instantiateReactComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/instantiateReactComponent.js","./shouldUpdateReactComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/shouldUpdateReactComponent.js","./traverseAllChildren":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/traverseAllChildren.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactChildren.js":[function(require,module,exports){
+},{"./ReactReconciler":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconciler.js","./instantiateReactComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/instantiateReactComponent.js","./shouldUpdateReactComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/shouldUpdateReactComponent.js","./traverseAllChildren":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/traverseAllChildren.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactChildren.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15254,7 +15254,7 @@ var ReactChildren = {
 };
 
 module.exports = ReactChildren;
-},{"./PooledClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/PooledClass.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./traverseAllChildren":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/traverseAllChildren.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactClass.js":[function(require,module,exports){
+},{"./PooledClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/PooledClass.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./traverseAllChildren":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/traverseAllChildren.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactClass.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16028,7 +16028,7 @@ var ReactClass = {
 
 module.exports = ReactClass;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponent.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactNoopUpdateQueue":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactNoopUpdateQueue.js","./ReactPropTypeLocationNames":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyMirror":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyMirror.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyOf.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponent.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponent.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactNoopUpdateQueue":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactNoopUpdateQueue.js","./ReactPropTypeLocationNames":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyMirror":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyMirror.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyOf.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16153,7 +16153,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactComponent;
 }).call(this,require('_process'))
-},{"./ReactNoopUpdateQueue":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactNoopUpdateQueue.js","./canDefineProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/canDefineProperty.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js":[function(require,module,exports){
+},{"./ReactNoopUpdateQueue":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactNoopUpdateQueue.js","./canDefineProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/canDefineProperty.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16195,7 +16195,7 @@ var ReactComponentBrowserEnvironment = {
 };
 
 module.exports = ReactComponentBrowserEnvironment;
-},{"./ReactDOMIDOperations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponentEnvironment.js":[function(require,module,exports){
+},{"./ReactDOMIDOperations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponentEnvironment.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -16249,7 +16249,7 @@ var ReactComponentEnvironment = {
 
 module.exports = ReactComponentEnvironment;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCompositeComponent.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCompositeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16946,7 +16946,7 @@ var ReactCompositeComponent = {
 
 module.exports = ReactCompositeComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactComponentEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponentEnvironment.js","./ReactCurrentOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactPropTypeLocationNames":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js","./ReactReconciler":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdateQueue.js","./shouldUpdateReactComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/shouldUpdateReactComponent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactComponentEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponentEnvironment.js","./ReactCurrentOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactPropTypeLocationNames":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js","./ReactReconciler":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdateQueue.js","./shouldUpdateReactComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/shouldUpdateReactComponent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16977,7 +16977,7 @@ var ReactCurrentOwner = {
 };
 
 module.exports = ReactCurrentOwner;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOM.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOM.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17072,7 +17072,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = React;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOMTextComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDefaultInjection":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultInjection.js","./ReactInstanceHandles":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconciler.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","./ReactVersion":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactVersion.js","./findDOMNode":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/findDOMNode.js","./renderSubtreeIntoContainer":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/renderSubtreeIntoContainer.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMButton.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOMTextComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDefaultInjection":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultInjection.js","./ReactInstanceHandles":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconciler.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","./ReactVersion":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactVersion.js","./findDOMNode":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/findDOMNode.js","./renderSubtreeIntoContainer":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/renderSubtreeIntoContainer.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMButton.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17123,7 +17123,7 @@ var ReactDOMButton = {
 };
 
 module.exports = ReactDOMButton;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMComponent.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18088,7 +18088,7 @@ assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mix
 
 module.exports = ReactDOMComponent;
 }).call(this,require('_process'))
-},{"./AutoFocusUtils":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/AutoFocusUtils.js","./CSSPropertyOperations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/CSSPropertyOperations.js","./DOMProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMProperty.js","./DOMPropertyOperations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMPropertyOperations.js","./EventConstants":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactBrowserEventEmitter":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponentBrowserEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMButton":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMButton.js","./ReactDOMInput":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMInput.js","./ReactDOMOption":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMOption.js","./ReactDOMSelect":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMSelect.js","./ReactDOMTextarea":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMTextarea.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactUpdateQueue":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdateQueue.js","./canDefineProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/canDefineProperty.js","./escapeTextContentForBrowser":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js","./isEventSupported":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/isEventSupported.js","./setInnerHTML":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/setInnerHTML.js","./setTextContent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/setTextContent.js","./validateDOMNesting":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/validateDOMNesting.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyOf.js","fbjs/lib/shallowEqual":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/shallowEqual.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMFactories.js":[function(require,module,exports){
+},{"./AutoFocusUtils":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/AutoFocusUtils.js","./CSSPropertyOperations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/CSSPropertyOperations.js","./DOMProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMProperty.js","./DOMPropertyOperations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMPropertyOperations.js","./EventConstants":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactBrowserEventEmitter":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponentBrowserEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMButton":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMButton.js","./ReactDOMInput":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMInput.js","./ReactDOMOption":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMOption.js","./ReactDOMSelect":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMSelect.js","./ReactDOMTextarea":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMTextarea.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactUpdateQueue":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdateQueue.js","./canDefineProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/canDefineProperty.js","./escapeTextContentForBrowser":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js","./isEventSupported":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/isEventSupported.js","./setInnerHTML":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/setInnerHTML.js","./setTextContent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/setTextContent.js","./validateDOMNesting":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/validateDOMNesting.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyOf.js","fbjs/lib/shallowEqual":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/shallowEqual.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMFactories.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18268,7 +18268,7 @@ var ReactDOMFactories = mapObject({
 
 module.exports = ReactDOMFactories;
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElementValidator.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/mapObject":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/mapObject.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMFeatureFlags.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElementValidator.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/mapObject":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/mapObject.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMFeatureFlags.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18287,7 +18287,7 @@ var ReactDOMFeatureFlags = {
 };
 
 module.exports = ReactDOMFeatureFlags;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMIDOperations.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMIDOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18384,7 +18384,7 @@ ReactPerf.measureMethods(ReactDOMIDOperations, 'ReactDOMIDOperations', {
 
 module.exports = ReactDOMIDOperations;
 }).call(this,require('_process'))
-},{"./DOMChildrenOperations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMPropertyOperations.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMInput.js":[function(require,module,exports){
+},{"./DOMChildrenOperations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMPropertyOperations.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMInput.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18540,7 +18540,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMInput;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactDOMIDOperations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMOption.js":[function(require,module,exports){
+},{"./LinkedValueUtils":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactDOMIDOperations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMOption.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18629,7 +18629,7 @@ var ReactDOMOption = {
 
 module.exports = ReactDOMOption;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactChildren.js","./ReactDOMSelect":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMSelect.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMSelect.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactChildren.js","./ReactDOMSelect":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMSelect.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMSelect.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18820,7 +18820,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMSelect;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMSelection.js":[function(require,module,exports){
+},{"./LinkedValueUtils":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19033,7 +19033,7 @@ var ReactDOMSelection = {
 };
 
 module.exports = ReactDOMSelection;
-},{"./getNodeForCharacterOffset":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getNodeForCharacterOffset.js","./getTextContentAccessor":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getTextContentAccessor.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMServer.js":[function(require,module,exports){
+},{"./getNodeForCharacterOffset":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getNodeForCharacterOffset.js","./getTextContentAccessor":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getTextContentAccessor.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMServer.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19060,7 +19060,7 @@ var ReactDOMServer = {
 };
 
 module.exports = ReactDOMServer;
-},{"./ReactDefaultInjection":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultInjection.js","./ReactServerRendering":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactServerRendering.js","./ReactVersion":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactVersion.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMTextComponent.js":[function(require,module,exports){
+},{"./ReactDefaultInjection":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultInjection.js","./ReactServerRendering":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactServerRendering.js","./ReactVersion":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactVersion.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMTextComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19190,7 +19190,7 @@ assign(ReactDOMTextComponent.prototype, {
 
 module.exports = ReactDOMTextComponent;
 }).call(this,require('_process'))
-},{"./DOMChildrenOperations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactComponentBrowserEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./escapeTextContentForBrowser":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js","./setTextContent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/setTextContent.js","./validateDOMNesting":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/validateDOMNesting.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMTextarea.js":[function(require,module,exports){
+},{"./DOMChildrenOperations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactComponentBrowserEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./escapeTextContentForBrowser":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js","./setTextContent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/setTextContent.js","./validateDOMNesting":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/validateDOMNesting.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMTextarea.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19306,7 +19306,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMTextarea;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactDOMIDOperations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMIDOperations.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultBatchingStrategy.js":[function(require,module,exports){
+},{"./LinkedValueUtils":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactDOMIDOperations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMIDOperations.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultBatchingStrategy.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19374,7 +19374,7 @@ var ReactDefaultBatchingStrategy = {
 };
 
 module.exports = ReactDefaultBatchingStrategy;
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","./Transaction":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Transaction.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultInjection.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","./Transaction":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Transaction.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultInjection.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19474,7 +19474,7 @@ module.exports = {
   inject: inject
 };
 }).call(this,require('_process'))
-},{"./BeforeInputEventPlugin":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/BeforeInputEventPlugin.js","./ChangeEventPlugin":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ChangeEventPlugin.js","./ClientReactRootIndex":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ClientReactRootIndex.js","./DefaultEventPluginOrder":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EnterLeaveEventPlugin.js","./HTMLDOMPropertyConfig":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/HTMLDOMPropertyConfig.js","./ReactBrowserComponentMixin":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactComponentBrowserEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMComponent.js","./ReactDOMTextComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDefaultBatchingStrategy":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactDefaultPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultPerf.js","./ReactEventListener":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEventListener.js","./ReactInjection":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInjection.js","./ReactInstanceHandles":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./ReactReconcileTransaction":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconcileTransaction.js","./SVGDOMPropertyConfig":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SVGDOMPropertyConfig.js","./SelectEventPlugin":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SelectEventPlugin.js","./ServerReactRootIndex":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ServerReactRootIndex.js","./SimpleEventPlugin":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SimpleEventPlugin.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultPerf.js":[function(require,module,exports){
+},{"./BeforeInputEventPlugin":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/BeforeInputEventPlugin.js","./ChangeEventPlugin":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ChangeEventPlugin.js","./ClientReactRootIndex":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ClientReactRootIndex.js","./DefaultEventPluginOrder":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EnterLeaveEventPlugin.js","./HTMLDOMPropertyConfig":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/HTMLDOMPropertyConfig.js","./ReactBrowserComponentMixin":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactComponentBrowserEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMComponent.js","./ReactDOMTextComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDefaultBatchingStrategy":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactDefaultPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultPerf.js","./ReactEventListener":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEventListener.js","./ReactInjection":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInjection.js","./ReactInstanceHandles":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./ReactReconcileTransaction":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconcileTransaction.js","./SVGDOMPropertyConfig":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SVGDOMPropertyConfig.js","./SelectEventPlugin":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SelectEventPlugin.js","./ServerReactRootIndex":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ServerReactRootIndex.js","./SimpleEventPlugin":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SimpleEventPlugin.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultPerf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19712,7 +19712,7 @@ var ReactDefaultPerf = {
 };
 
 module.exports = ReactDefaultPerf;
-},{"./DOMProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMProperty.js","./ReactDefaultPerfAnalysis":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultPerfAnalysis.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","fbjs/lib/performanceNow":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/performanceNow.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultPerfAnalysis.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMProperty.js","./ReactDefaultPerfAnalysis":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultPerfAnalysis.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","fbjs/lib/performanceNow":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/performanceNow.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultPerfAnalysis.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19912,7 +19912,7 @@ var ReactDefaultPerfAnalysis = {
 };
 
 module.exports = ReactDefaultPerfAnalysis;
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -20162,7 +20162,7 @@ ReactElement.isValidElement = function (object) {
 
 module.exports = ReactElement;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactCurrentOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./canDefineProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/canDefineProperty.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElementValidator.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactCurrentOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./canDefineProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/canDefineProperty.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElementValidator.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -20446,7 +20446,7 @@ var ReactElementValidator = {
 
 module.exports = ReactElementValidator;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js","./canDefineProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/canDefineProperty.js","./getIteratorFn":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getIteratorFn.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEmptyComponent.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js","./canDefineProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/canDefineProperty.js","./getIteratorFn":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getIteratorFn.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEmptyComponent.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -20498,7 +20498,7 @@ assign(ReactEmptyComponent.prototype, {
 ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 
 module.exports = ReactEmptyComponent;
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactEmptyComponentRegistry":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEmptyComponentRegistry.js","./ReactReconciler":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconciler.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEmptyComponentRegistry.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactEmptyComponentRegistry":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEmptyComponentRegistry.js","./ReactReconciler":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconciler.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEmptyComponentRegistry.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -20547,7 +20547,7 @@ var ReactEmptyComponentRegistry = {
 };
 
 module.exports = ReactEmptyComponentRegistry;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactErrorUtils.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactErrorUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -20627,7 +20627,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactErrorUtils;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEventEmitterMixin.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEventEmitterMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -20666,7 +20666,7 @@ var ReactEventEmitterMixin = {
 };
 
 module.exports = ReactEventEmitterMixin;
-},{"./EventPluginHub":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginHub.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEventListener.js":[function(require,module,exports){
+},{"./EventPluginHub":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginHub.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEventListener.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -20878,7 +20878,7 @@ var ReactEventListener = {
 };
 
 module.exports = ReactEventListener;
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/PooledClass.js","./ReactInstanceHandles":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","./getEventTarget":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventTarget.js","fbjs/lib/EventListener":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/EventListener.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getUnboundedScrollPosition":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/getUnboundedScrollPosition.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInjection.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/PooledClass.js","./ReactInstanceHandles":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","./getEventTarget":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventTarget.js","fbjs/lib/EventListener":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/EventListener.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getUnboundedScrollPosition":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/getUnboundedScrollPosition.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInjection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -20917,7 +20917,7 @@ var ReactInjection = {
 };
 
 module.exports = ReactInjection;
-},{"./DOMProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMProperty.js","./EventPluginHub":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPluginHub.js","./ReactBrowserEventEmitter":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactClass.js","./ReactComponentEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponentEnvironment.js","./ReactEmptyComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactNativeComponent.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactRootIndex":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactRootIndex.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInputSelection.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMProperty.js","./EventPluginHub":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPluginHub.js","./ReactBrowserEventEmitter":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactClass.js","./ReactComponentEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponentEnvironment.js","./ReactEmptyComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactNativeComponent.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactRootIndex":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactRootIndex.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInputSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -21042,7 +21042,7 @@ var ReactInputSelection = {
 };
 
 module.exports = ReactInputSelection;
-},{"./ReactDOMSelection":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMSelection.js","fbjs/lib/containsNode":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/containsNode.js","fbjs/lib/focusNode":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/focusNode.js","fbjs/lib/getActiveElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/getActiveElement.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceHandles.js":[function(require,module,exports){
+},{"./ReactDOMSelection":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMSelection.js","fbjs/lib/containsNode":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/containsNode.js","fbjs/lib/focusNode":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/focusNode.js","fbjs/lib/getActiveElement":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/getActiveElement.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceHandles.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -21347,7 +21347,7 @@ var ReactInstanceHandles = {
 
 module.exports = ReactInstanceHandles;
 }).call(this,require('_process'))
-},{"./ReactRootIndex":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactRootIndex.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceMap.js":[function(require,module,exports){
+},{"./ReactRootIndex":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactRootIndex.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceMap.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -21395,7 +21395,7 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactIsomorphic.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactIsomorphic.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -21472,7 +21472,7 @@ var React = {
 
 module.exports = React;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactChildren.js","./ReactClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactClass.js","./ReactComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponent.js","./ReactDOMFactories":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMFactories.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElementValidator.js","./ReactPropTypes":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypes.js","./ReactVersion":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactVersion.js","./onlyChild":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/onlyChild.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMarkupChecksum.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactChildren.js","./ReactClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactClass.js","./ReactComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponent.js","./ReactDOMFactories":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMFactories.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElementValidator.js","./ReactPropTypes":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypes.js","./ReactVersion":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactVersion.js","./onlyChild":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/onlyChild.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMarkupChecksum.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -21518,7 +21518,7 @@ var ReactMarkupChecksum = {
 };
 
 module.exports = ReactMarkupChecksum;
-},{"./adler32":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/adler32.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js":[function(require,module,exports){
+},{"./adler32":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/adler32.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22371,7 +22371,7 @@ ReactPerf.measureMethods(ReactMount, 'ReactMount', {
 
 module.exports = ReactMount;
 }).call(this,require('_process'))
-},{"./DOMProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMProperty.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactBrowserEventEmitter":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactCurrentOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOMFeatureFlags":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMFeatureFlags.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactEmptyComponentRegistry":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEmptyComponentRegistry.js","./ReactInstanceHandles":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactInstanceMap":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./ReactMarkupChecksum":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMarkupChecksum.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdateQueue.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/instantiateReactComponent.js","./setInnerHTML":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/setInnerHTML.js","./shouldUpdateReactComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/shouldUpdateReactComponent.js","./validateDOMNesting":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/validateDOMNesting.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/containsNode":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/containsNode.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMultiChild.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMProperty.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactBrowserEventEmitter":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactCurrentOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOMFeatureFlags":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMFeatureFlags.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactEmptyComponentRegistry":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEmptyComponentRegistry.js","./ReactInstanceHandles":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactInstanceMap":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./ReactMarkupChecksum":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMarkupChecksum.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdateQueue.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/instantiateReactComponent.js","./setInnerHTML":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/setInnerHTML.js","./shouldUpdateReactComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/shouldUpdateReactComponent.js","./validateDOMNesting":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/validateDOMNesting.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/containsNode":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/containsNode.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMultiChild.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22870,7 +22870,7 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 }).call(this,require('_process'))
-},{"./ReactChildReconciler":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactChildReconciler.js","./ReactComponentEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactComponentEnvironment.js","./ReactCurrentOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactMultiChildUpdateTypes":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./ReactReconciler":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconciler.js","./flattenChildren":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/flattenChildren.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMultiChildUpdateTypes.js":[function(require,module,exports){
+},{"./ReactChildReconciler":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactChildReconciler.js","./ReactComponentEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactComponentEnvironment.js","./ReactCurrentOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactMultiChildUpdateTypes":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./ReactReconciler":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconciler.js","./flattenChildren":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/flattenChildren.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMultiChildUpdateTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -22903,7 +22903,7 @@ var ReactMultiChildUpdateTypes = keyMirror({
 });
 
 module.exports = ReactMultiChildUpdateTypes;
-},{"fbjs/lib/keyMirror":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyMirror.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactNativeComponent.js":[function(require,module,exports){
+},{"fbjs/lib/keyMirror":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyMirror.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactNativeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -23000,7 +23000,7 @@ var ReactNativeComponent = {
 
 module.exports = ReactNativeComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactNoopUpdateQueue.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactNoopUpdateQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -23121,7 +23121,7 @@ var ReactNoopUpdateQueue = {
 
 module.exports = ReactNoopUpdateQueue;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactOwner.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactOwner.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -23215,7 +23215,7 @@ var ReactOwner = {
 
 module.exports = ReactOwner;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -23314,7 +23314,7 @@ function _noMeasure(objName, fnName, func) {
 
 module.exports = ReactPerf;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -23341,7 +23341,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactPropTypeLocationNames;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocations.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -23364,7 +23364,7 @@ var ReactPropTypeLocations = keyMirror({
 });
 
 module.exports = ReactPropTypeLocations;
-},{"fbjs/lib/keyMirror":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyMirror.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypes.js":[function(require,module,exports){
+},{"fbjs/lib/keyMirror":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyMirror.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -23721,7 +23721,7 @@ function getClassName(propValue) {
 }
 
 module.exports = ReactPropTypes;
-},{"./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./getIteratorFn":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getIteratorFn.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconcileTransaction.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./getIteratorFn":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getIteratorFn.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconcileTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -23873,7 +23873,7 @@ assign(ReactReconcileTransaction.prototype, Transaction.Mixin, Mixin);
 PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
-},{"./CallbackQueue":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactDOMFeatureFlags":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDOMFeatureFlags.js","./ReactInputSelection":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInputSelection.js","./Transaction":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Transaction.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconciler.js":[function(require,module,exports){
+},{"./CallbackQueue":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactDOMFeatureFlags":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDOMFeatureFlags.js","./ReactInputSelection":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInputSelection.js","./Transaction":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Transaction.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconciler.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -23981,7 +23981,7 @@ var ReactReconciler = {
 };
 
 module.exports = ReactReconciler;
-},{"./ReactRef":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactRef.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactRef.js":[function(require,module,exports){
+},{"./ReactRef":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactRef.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactRef.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -24060,7 +24060,7 @@ ReactRef.detachRefs = function (instance, element) {
 };
 
 module.exports = ReactRef;
-},{"./ReactOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactOwner.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactRootIndex.js":[function(require,module,exports){
+},{"./ReactOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactOwner.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -24090,7 +24090,7 @@ var ReactRootIndex = {
 };
 
 module.exports = ReactRootIndex;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactServerBatchingStrategy.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactServerBatchingStrategy.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -24114,7 +24114,7 @@ var ReactServerBatchingStrategy = {
 };
 
 module.exports = ReactServerBatchingStrategy;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactServerRendering.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactServerRendering.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -24200,7 +24200,7 @@ module.exports = {
   renderToStaticMarkup: renderToStaticMarkup
 };
 }).call(this,require('_process'))
-},{"./ReactDefaultBatchingStrategy":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMarkupChecksum":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMarkupChecksum.js","./ReactServerBatchingStrategy":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactServerBatchingStrategy.js","./ReactServerRenderingTransaction":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactServerRenderingTransaction.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/instantiateReactComponent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactServerRenderingTransaction.js":[function(require,module,exports){
+},{"./ReactDefaultBatchingStrategy":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMarkupChecksum":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMarkupChecksum.js","./ReactServerBatchingStrategy":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactServerBatchingStrategy.js","./ReactServerRenderingTransaction":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactServerRenderingTransaction.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/instantiateReactComponent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactServerRenderingTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -24288,7 +24288,7 @@ assign(ReactServerRenderingTransaction.prototype, Transaction.Mixin, Mixin);
 PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
-},{"./CallbackQueue":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/PooledClass.js","./Transaction":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Transaction.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdateQueue.js":[function(require,module,exports){
+},{"./CallbackQueue":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/PooledClass.js","./Transaction":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Transaction.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdateQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -24548,7 +24548,7 @@ var ReactUpdateQueue = {
 
 module.exports = ReactUpdateQueue;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactCurrentOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./ReactUpdates":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactUpdates.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactCurrentOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./ReactUpdates":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactUpdates.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -24774,7 +24774,7 @@ var ReactUpdates = {
 
 module.exports = ReactUpdates;
 }).call(this,require('_process'))
-},{"./CallbackQueue":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/PooledClass.js","./ReactPerf":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactReconciler.js","./Transaction":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Transaction.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactVersion.js":[function(require,module,exports){
+},{"./CallbackQueue":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/PooledClass.js","./ReactPerf":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactReconciler.js","./Transaction":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Transaction.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactVersion.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -24789,7 +24789,7 @@ module.exports = ReactUpdates;
 'use strict';
 
 module.exports = '0.14.3';
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SVGDOMPropertyConfig.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SVGDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -24917,7 +24917,7 @@ var SVGDOMPropertyConfig = {
 };
 
 module.exports = SVGDOMPropertyConfig;
-},{"./DOMProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/DOMProperty.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SelectEventPlugin.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/DOMProperty.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SelectEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -25119,7 +25119,7 @@ var SelectEventPlugin = {
 };
 
 module.exports = SelectEventPlugin;
-},{"./EventConstants":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPropagators.js","./ReactInputSelection":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInputSelection.js","./SyntheticEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticEvent.js","./isTextInputElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getActiveElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/getActiveElement.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyOf.js","fbjs/lib/shallowEqual":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/shallowEqual.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ServerReactRootIndex.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPropagators.js","./ReactInputSelection":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInputSelection.js","./SyntheticEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticEvent.js","./isTextInputElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getActiveElement":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/getActiveElement.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyOf.js","fbjs/lib/shallowEqual":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/shallowEqual.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ServerReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -25149,7 +25149,7 @@ var ServerReactRootIndex = {
 };
 
 module.exports = ServerReactRootIndex;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SimpleEventPlugin.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SimpleEventPlugin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -25739,7 +25739,7 @@ var SimpleEventPlugin = {
 
 module.exports = SimpleEventPlugin;
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","./SyntheticClipboardEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticClipboardEvent.js","./SyntheticDragEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticDragEvent.js","./SyntheticEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticEvent.js","./SyntheticFocusEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js","./SyntheticTouchEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticTouchEvent.js","./SyntheticUIEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticUIEvent.js","./SyntheticWheelEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticWheelEvent.js","./getEventCharCode":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventCharCode.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/EventListener":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/EventListener.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticClipboardEvent.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","./SyntheticClipboardEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticClipboardEvent.js","./SyntheticDragEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticDragEvent.js","./SyntheticEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticEvent.js","./SyntheticFocusEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js","./SyntheticTouchEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticTouchEvent.js","./SyntheticUIEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticUIEvent.js","./SyntheticWheelEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticWheelEvent.js","./getEventCharCode":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventCharCode.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/EventListener":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/EventListener.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyOf":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/keyOf.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticClipboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -25779,7 +25779,7 @@ function SyntheticClipboardEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
-},{"./SyntheticEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticEvent.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticCompositionEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticEvent.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticCompositionEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -25817,7 +25817,7 @@ function SyntheticCompositionEvent(dispatchConfig, dispatchMarker, nativeEvent, 
 SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface);
 
 module.exports = SyntheticCompositionEvent;
-},{"./SyntheticEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticEvent.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticDragEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticEvent.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticDragEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -25855,7 +25855,7 @@ function SyntheticDragEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeE
 SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
-},{"./SyntheticMouseEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticEvent.js":[function(require,module,exports){
+},{"./SyntheticMouseEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticEvent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -26035,7 +26035,7 @@ PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
 
 module.exports = SyntheticEvent;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/PooledClass.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticFocusEvent.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/PooledClass.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticFocusEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26073,7 +26073,7 @@ function SyntheticFocusEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
-},{"./SyntheticUIEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticUIEvent.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticInputEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticUIEvent.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticInputEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26112,7 +26112,7 @@ function SyntheticInputEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 
 module.exports = SyntheticInputEvent;
-},{"./SyntheticEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticEvent.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticKeyboardEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticEvent.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticKeyboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26198,7 +26198,7 @@ function SyntheticKeyboardEvent(dispatchConfig, dispatchMarker, nativeEvent, nat
 SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
-},{"./SyntheticUIEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticUIEvent.js","./getEventCharCode":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventCharCode.js","./getEventKey":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventKey.js","./getEventModifierState":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventModifierState.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticUIEvent.js","./getEventCharCode":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventCharCode.js","./getEventKey":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventKey.js","./getEventModifierState":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventModifierState.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26272,7 +26272,7 @@ function SyntheticMouseEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
-},{"./SyntheticUIEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticUIEvent.js","./ViewportMetrics":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ViewportMetrics.js","./getEventModifierState":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventModifierState.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticTouchEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticUIEvent.js","./ViewportMetrics":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ViewportMetrics.js","./getEventModifierState":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventModifierState.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticTouchEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26319,7 +26319,7 @@ function SyntheticTouchEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
-},{"./SyntheticUIEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticUIEvent.js","./getEventModifierState":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventModifierState.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticUIEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticUIEvent.js","./getEventModifierState":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventModifierState.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticUIEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26380,7 +26380,7 @@ function SyntheticUIEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEve
 SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
-},{"./SyntheticEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventTarget.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticWheelEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventTarget.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticWheelEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26436,7 +26436,7 @@ function SyntheticWheelEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
-},{"./SyntheticMouseEvent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Transaction.js":[function(require,module,exports){
+},{"./SyntheticMouseEvent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Transaction.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -26670,7 +26670,7 @@ var Transaction = {
 
 module.exports = Transaction;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ViewportMetrics.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ViewportMetrics.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26698,7 +26698,7 @@ var ViewportMetrics = {
 };
 
 module.exports = ViewportMetrics;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/accumulateInto.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/accumulateInto.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -26760,7 +26760,7 @@ function accumulateInto(current, next) {
 
 module.exports = accumulateInto;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/adler32.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/adler32.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26803,7 +26803,7 @@ function adler32(data) {
 }
 
 module.exports = adler32;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/canDefineProperty.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/canDefineProperty.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -26830,7 +26830,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = canDefineProperty;
 }).call(this,require('_process'))
-},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/dangerousStyleValue.js":[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/dangerousStyleValue.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26886,7 +26886,7 @@ function dangerousStyleValue(name, value) {
 }
 
 module.exports = dangerousStyleValue;
-},{"./CSSProperty":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/CSSProperty.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/deprecated.js":[function(require,module,exports){
+},{"./CSSProperty":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/CSSProperty.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/deprecated.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -26937,7 +26937,7 @@ function deprecated(fnName, newModule, newPackage, ctx, fn) {
 
 module.exports = deprecated;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -26976,7 +26976,7 @@ function escapeTextContentForBrowser(text) {
 }
 
 module.exports = escapeTextContentForBrowser;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/findDOMNode.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/findDOMNode.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27028,7 +27028,7 @@ function findDOMNode(componentOrElement) {
 
 module.exports = findDOMNode;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactInstanceMap":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/flattenChildren.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactInstanceMap":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceMap.js","./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/flattenChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27079,7 +27079,7 @@ function flattenChildren(children) {
 
 module.exports = flattenChildren;
 }).call(this,require('_process'))
-},{"./traverseAllChildren":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/traverseAllChildren.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/forEachAccumulated.js":[function(require,module,exports){
+},{"./traverseAllChildren":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/traverseAllChildren.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/forEachAccumulated.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27109,7 +27109,7 @@ var forEachAccumulated = function (arr, cb, scope) {
 };
 
 module.exports = forEachAccumulated;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventCharCode.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventCharCode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27160,7 +27160,7 @@ function getEventCharCode(nativeEvent) {
 }
 
 module.exports = getEventCharCode;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventKey.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventKey.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27264,7 +27264,7 @@ function getEventKey(nativeEvent) {
 }
 
 module.exports = getEventKey;
-},{"./getEventCharCode":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventCharCode.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventModifierState.js":[function(require,module,exports){
+},{"./getEventCharCode":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventCharCode.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventModifierState.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27309,7 +27309,7 @@ function getEventModifierState(nativeEvent) {
 }
 
 module.exports = getEventModifierState;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getEventTarget.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getEventTarget.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27339,7 +27339,7 @@ function getEventTarget(nativeEvent) {
 }
 
 module.exports = getEventTarget;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getIteratorFn.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getIteratorFn.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27380,7 +27380,7 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getNodeForCharacterOffset.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getNodeForCharacterOffset.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27454,7 +27454,7 @@ function getNodeForCharacterOffset(root, offset) {
 }
 
 module.exports = getNodeForCharacterOffset;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getTextContentAccessor.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getTextContentAccessor.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27488,7 +27488,7 @@ function getTextContentAccessor() {
 }
 
 module.exports = getTextContentAccessor;
-},{"fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/instantiateReactComponent.js":[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/instantiateReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27603,7 +27603,7 @@ function instantiateReactComponent(node) {
 
 module.exports = instantiateReactComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","./ReactCompositeComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCompositeComponent.js","./ReactEmptyComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactNativeComponent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/isEventSupported.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","./ReactCompositeComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCompositeComponent.js","./ReactEmptyComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactNativeComponent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/isEventSupported.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27664,7 +27664,7 @@ function isEventSupported(eventNameSuffix, capture) {
 }
 
 module.exports = isEventSupported;
-},{"fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/isTextInputElement.js":[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/isTextInputElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27705,7 +27705,7 @@ function isTextInputElement(elem) {
 }
 
 module.exports = isTextInputElement;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/onlyChild.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/onlyChild.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27741,7 +27741,7 @@ function onlyChild(children) {
 
 module.exports = onlyChild;
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/quoteAttributeValueForBrowser.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/quoteAttributeValueForBrowser.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27768,7 +27768,7 @@ function quoteAttributeValueForBrowser(value) {
 }
 
 module.exports = quoteAttributeValueForBrowser;
-},{"./escapeTextContentForBrowser":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/renderSubtreeIntoContainer.js":[function(require,module,exports){
+},{"./escapeTextContentForBrowser":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/renderSubtreeIntoContainer.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27785,7 +27785,7 @@ module.exports = quoteAttributeValueForBrowser;
 var ReactMount = require('./ReactMount');
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
-},{"./ReactMount":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactMount.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/setInnerHTML.js":[function(require,module,exports){
+},{"./ReactMount":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactMount.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/setInnerHTML.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27876,7 +27876,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setInnerHTML;
-},{"fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/setTextContent.js":[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/setTextContent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27917,7 +27917,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setTextContent;
-},{"./escapeTextContentForBrowser":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js","./setInnerHTML":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/setInnerHTML.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/shouldUpdateReactComponent.js":[function(require,module,exports){
+},{"./escapeTextContentForBrowser":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/escapeTextContentForBrowser.js","./setInnerHTML":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/setInnerHTML.js","fbjs/lib/ExecutionEnvironment":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/shouldUpdateReactComponent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27961,7 +27961,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 }
 
 module.exports = shouldUpdateReactComponent;
-},{}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/traverseAllChildren.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/traverseAllChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -28153,7 +28153,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./getIteratorFn":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/getIteratorFn.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/validateDOMNesting.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/ReactInstanceHandles.js","./getIteratorFn":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/getIteratorFn.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/validateDOMNesting.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -28519,12 +28519,12 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = validateDOMNesting;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/Object.assign.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/adam/projects/crospy2/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy2/jsplayer/node_modules/react/react.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/Object.assign.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/adam/projects/crospy/jsplayer/node_modules/fbjs/lib/warning.js"}],"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js":[function(require,module,exports){
 'use strict';
 
 module.exports = require('./lib/React');
 
-},{"./lib/React":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/lib/React.js"}],"/Users/adam/projects/crospy2/jsplayer/src/CrosswordStore.js":[function(require,module,exports){
+},{"./lib/React":"/Users/adam/projects/crospy/jsplayer/node_modules/react/lib/React.js"}],"/Users/adam/projects/crospy/jsplayer/src/CrosswordStore.js":[function(require,module,exports){
 'use strict';
 
 /*global fetch, require, module */
@@ -28579,10 +28579,6 @@ var CrosswordStore = assign(EventEmitter.prototype, {
 
   removeChangeListener: function removeChangeListener(callback) {
     this.removeListener(AppConstants.CHANGE_EVENT, callback);
-  },
-
-  getValues: function getValues(crosswordId) {
-    return [];
   },
 
   dispatcherIndex: AppDispatcher.register(function (payload) {
@@ -28652,17 +28648,18 @@ socket.on('key pressed', function (event) {
 
 module.exports = CrosswordStore;
 
-},{"./app-constants":"/Users/adam/projects/crospy2/jsplayer/src/app-constants.js","./app-dispatcher":"/Users/adam/projects/crospy2/jsplayer/src/app-dispatcher.js","events":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/events/events.js","object-assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/object-assign/index.js"}],"/Users/adam/projects/crospy2/jsplayer/src/app-actions.js":[function(require,module,exports){
+},{"./app-constants":"/Users/adam/projects/crospy/jsplayer/src/app-constants.js","./app-dispatcher":"/Users/adam/projects/crospy/jsplayer/src/app-dispatcher.js","events":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/events/events.js","object-assign":"/Users/adam/projects/crospy/jsplayer/node_modules/object-assign/index.js"}],"/Users/adam/projects/crospy/jsplayer/src/app-actions.js":[function(require,module,exports){
 'use strict';
 
 var AppConstants = require('./app-constants'),
     AppDispatcher = require('./app-dispatcher');
 
 module.exports = {
-  keyEntered: function keyEntered(cellId, character, room) {
+  keyEntered: function keyEntered(cellId, character, room, source) {
+    console.log(source);
     AppDispatcher.handleViewAction({
       actionType: AppConstants.KEY_ENTERED,
-      event: { cellId: cellId, character: character, room: room }
+      event: { cellId: cellId, character: character, room: room, source: source }
     });
   },
 
@@ -28680,7 +28677,7 @@ module.exports = {
   }
 };
 
-},{"./app-constants":"/Users/adam/projects/crospy2/jsplayer/src/app-constants.js","./app-dispatcher":"/Users/adam/projects/crospy2/jsplayer/src/app-dispatcher.js"}],"/Users/adam/projects/crospy2/jsplayer/src/app-constants.js":[function(require,module,exports){
+},{"./app-constants":"/Users/adam/projects/crospy/jsplayer/src/app-constants.js","./app-dispatcher":"/Users/adam/projects/crospy/jsplayer/src/app-dispatcher.js"}],"/Users/adam/projects/crospy/jsplayer/src/app-constants.js":[function(require,module,exports){
 "use strict";
 
 module.exports = {
@@ -28693,7 +28690,7 @@ module.exports = {
   CHANGE_EVENT: 'change'
 };
 
-},{}],"/Users/adam/projects/crospy2/jsplayer/src/app-dispatcher.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/src/app-dispatcher.js":[function(require,module,exports){
 'use strict';
 
 var Dispatcher = require('flux').Dispatcher,
@@ -28710,7 +28707,7 @@ var Dispatcher = require('flux').Dispatcher,
 
 module.exports = AppDispatcher;
 
-},{"flux":"/Users/adam/projects/crospy2/jsplayer/node_modules/flux/index.js","object-assign":"/Users/adam/projects/crospy2/jsplayer/node_modules/object-assign/index.js"}],"/Users/adam/projects/crospy2/jsplayer/src/app.js":[function(require,module,exports){
+},{"flux":"/Users/adam/projects/crospy/jsplayer/node_modules/flux/index.js","object-assign":"/Users/adam/projects/crospy/jsplayer/node_modules/object-assign/index.js"}],"/Users/adam/projects/crospy/jsplayer/src/app.js":[function(require,module,exports){
 'use strict';
 
 var _Crossword = require('./components/Crossword.jsx');
@@ -28723,60 +28720,62 @@ var _CrosswordStore2 = _interopRequireDefault(_CrosswordStore);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var React = require('react'),
-    ReactDOM = require('react-dom'),
-    $ = require('jquery'),
-    CrosswordModel = require('./models/CrosswordModel.js'),
-    AppActions = require('./app-actions'),
-    numloadingcells = 15 * 15,
-    data = require('./data.js'),
-    testLoading = true,
-    makeLoader = function makeLoader() {
-  var container = $('#loading_container');
-  for (var i = 0; i < numloadingcells; i++) {
-    container.append('<div class="foo"></div>');
+(function (window) {
+
+  var React = require('react'),
+      ReactDOM = require('react-dom'),
+      $ = require('jquery'),
+      CrosswordModel = require('./models/CrosswordModel.js'),
+      AppActions = require('./app-actions'),
+      numloadingcells = 15 * 15,
+      data = require('./data.js'),
+      testLoading = true,
+      makeLoader = function makeLoader() {
+    var container = $('#loading_container');
+    for (var i = 0; i < numloadingcells; i++) {
+      container.append('<div class="foo"></div>');
+    }
+    function randomlyFlip() {
+      var targetIndex = parseInt(Math.random() * numloadingcells / 2),
+          target = $($('.foo')[targetIndex]),
+          oppositeTarget = $($('.foo')[numloadingcells - targetIndex - 1]);
+      target.toggleClass('highlighted');
+      oppositeTarget.toggleClass('highlighted');
+    }
+    return setInterval(randomlyFlip, 100);
+  },
+      interval;
+
+  function finalizeGrid(data) {
+    var model = new CrosswordModel(data.cells, data.gridinfo.size, data);
+    ReactDOM.render(React.createElement(_Crossword2.default, { playerId: socket.id, crosswordId: data._id, model: model, rawData: data, title: data.gridinfo.name, clues: data.clues, numbered: data.numbered, cells: data.cells, size: data.gridinfo.size }), document.getElementById('app'));
+    $('.loading').addClass('out');
+    $('#app').removeClass('out');
+    clearInterval(interval);
   }
-  function randomlyFlip() {
-    var targetIndex = parseInt(Math.random() * numloadingcells / 2),
-        target = $($('.foo')[targetIndex]),
-        oppositeTarget = $($('.foo')[numloadingcells - targetIndex - 1]);
-    target.toggleClass('highlighted');
-    oppositeTarget.toggleClass('highlighted');
+
+  _CrosswordStore2.default.on('generated', function (data) {
+    finalizeGrid(data);
+    window.history.pushState({ id: data._id }, 'Random Crossword', '/' + data._id + '/');
+  });
+
+  _CrosswordStore2.default.on('loaded', finalizeGrid);
+
+  function generateCrossword() {
+    interval = makeLoader();
+    AppActions.requestCrossword();
   }
-  return setInterval(randomlyFlip, 100);
-},
-    interval;
 
-function finalizeGrid(data) {
-  var model = new CrosswordModel(data.cells, data.gridinfo.size, data);
-  ReactDOM.render(React.createElement(_Crossword2.default, { crosswordId: data._id, model: model, rawData: data, title: data.gridinfo.name, clues: data.clues, numbered: data.numbered, cells: data.cells, size: data.gridinfo.size }), document.getElementById('app'));
-  $('.loading').addClass('out');
-  $('#app').removeClass('out');
-  clearInterval(interval);
-}
+  function loadCrossword(crossword_id) {
+    interval = makeLoader();
+    AppActions.loadCrossword(crossword_id);
+  }
 
-console.log(_CrosswordStore2.default);
-_CrosswordStore2.default.on('generated', function (data) {
-  finalizeGrid(data);
-  window.history.pushState({ id: data._id }, 'Random Crossword', '/' + data._id + '/');
-});
+  window.generateCrossword = generateCrossword;
+  window.loadCrossword = loadCrossword;
+})(window);
 
-_CrosswordStore2.default.on('loaded', finalizeGrid);
-
-function generateCrossword() {
-  interval = makeLoader();
-  AppActions.requestCrossword();
-}
-
-function loadCrossword(crossword_id) {
-  interval = makeLoader();
-  AppActions.loadCrossword(crossword_id);
-}
-
-window.generateCrossword = generateCrossword;
-window.loadCrossword = loadCrossword;
-
-},{"./CrosswordStore":"/Users/adam/projects/crospy2/jsplayer/src/CrosswordStore.js","./app-actions":"/Users/adam/projects/crospy2/jsplayer/src/app-actions.js","./components/Crossword.jsx":"/Users/adam/projects/crospy2/jsplayer/src/components/Crossword.jsx","./data.js":"/Users/adam/projects/crospy2/jsplayer/src/data.js","./models/CrosswordModel.js":"/Users/adam/projects/crospy2/jsplayer/src/models/CrosswordModel.js","jquery":"/Users/adam/projects/crospy2/jsplayer/node_modules/jquery/dist/jquery.js","react":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/react.js","react-dom":"/Users/adam/projects/crospy2/jsplayer/node_modules/react-dom/index.js"}],"/Users/adam/projects/crospy2/jsplayer/src/components/Cell.jsx":[function(require,module,exports){
+},{"./CrosswordStore":"/Users/adam/projects/crospy/jsplayer/src/CrosswordStore.js","./app-actions":"/Users/adam/projects/crospy/jsplayer/src/app-actions.js","./components/Crossword.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/Crossword.jsx","./data.js":"/Users/adam/projects/crospy/jsplayer/src/data.js","./models/CrosswordModel.js":"/Users/adam/projects/crospy/jsplayer/src/models/CrosswordModel.js","jquery":"/Users/adam/projects/crospy/jsplayer/node_modules/jquery/dist/jquery.js","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js","react-dom":"/Users/adam/projects/crospy/jsplayer/node_modules/react-dom/index.js"}],"/Users/adam/projects/crospy/jsplayer/src/components/Cell.jsx":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28805,6 +28804,7 @@ exports.default = _react2.default.createClass({
     },
         classes = (0, _classnames2.default)({
       'cell': true,
+      'othered': !this.props.playerEntered,
       'incorrect': this.props.value && this.props.highlightErrors && this.props.value.toLowerCase() != this.props.correctValue.toLowerCase(),
       'input-cell': this.props.selected,
       'flex-centered': true,
@@ -28830,7 +28830,7 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"classnames":"/Users/adam/projects/crospy2/jsplayer/node_modules/classnames/index.js","react":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy2/jsplayer/src/components/Cells.jsx":[function(require,module,exports){
+},{"classnames":"/Users/adam/projects/crospy/jsplayer/node_modules/classnames/index.js","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy/jsplayer/src/components/Cells.jsx":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28853,10 +28853,6 @@ var _appActions = require('../app-actions');
 
 var _appActions2 = _interopRequireDefault(_appActions);
 
-var _CrosswordStore = require('../CrosswordStore');
-
-var _CrosswordStore2 = _interopRequireDefault(_CrosswordStore);
-
 var _Directions = require('../models/Directions.js');
 
 var _Directions2 = _interopRequireDefault(_Directions);
@@ -28870,23 +28866,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _react2.default.createClass({
   displayName: 'Cells',
 
-  getInitialState: function getInitialState() {
-    return {
-      direction: _Directions2.default.ACROSS,
-      cellValues: _CrosswordStore2.default.getValues(this.props.crosswordId)
-    };
-  },
-
-  handleChange: function handleChange(changeEvent) {
-    var values = this.state.cellValues;
-    values[changeEvent.cellId] = changeEvent.character;
-    this.setState({ cellValues: values });
-  },
-
-  componentWillMount: function componentWillMount() {
-    _CrosswordStore2.default.addChangeListener(this.handleChange);
-  },
-
   makeActive: function makeActive(id) {
     if (this.props.values[id] !== _Unplayable2.default) {
       this.props.makeActive(id);
@@ -28895,23 +28874,23 @@ exports.default = _react2.default.createClass({
 
   handleLetter: function handleLetter(character) {
     var nextCell = this.nextCellFrom(this.props.activeCell, 1, this.props.direction);
-    _appActions2.default.keyEntered(this.props.activeCell, character, this.props.crosswordId);
+    _appActions2.default.keyEntered(this.props.activeCell, character, this.props.crosswordId, this.props.playerId);
     this.go(1);
   },
 
   handleBackspace: function handleBackspace() {
-    if (this.state.cellValues[this.props.activeCell] == undefined) {
+    if (this.props.cellValues[this.props.activeCell] == undefined) {
       this.go(-1);
-      _appActions2.default.keyEntered(this.props.activeCell, undefined, this.props.crosswordId);
+      _appActions2.default.keyEntered(this.props.activeCell, undefined, this.props.crosswordId, this.props.playerId);
     } else {
-      _appActions2.default.keyEntered(this.props.activeCell, undefined, this.props.crosswordId);
+      _appActions2.default.keyEntered(this.props.activeCell, undefined, this.props.crosswordId, this.props.playerId);
       this.go(-1);
     }
   },
 
   handleKeyDown: function handleKeyDown(e) {
     if (this.props.activeCell !== undefined) {
-      var values = this.state.cellValues,
+      var values = this.props.cellValues,
           direction = this.props.direction;
 
       if (e.which == 8) {
@@ -29068,7 +29047,8 @@ exports.default = _react2.default.createClass({
             selected: id == this.props.activeCell,
             highlightErrors: this.props.highlightErrors,
             key: id,
-            value: this.state.cellValues[id],
+            playerEntered: this.props.cellSources[id] === undefined || this.props.cellSources[id] == this.props.playerId,
+            value: this.props.cellValues[id],
             playable: cell !== _Unplayable2.default,
             correctValue: cell,
             size: 100 / size });
@@ -29079,7 +29059,7 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"../CrosswordStore":"/Users/adam/projects/crospy2/jsplayer/src/CrosswordStore.js","../app-actions":"/Users/adam/projects/crospy2/jsplayer/src/app-actions.js","../models/Directions.js":"/Users/adam/projects/crospy2/jsplayer/src/models/Directions.js","../models/Unplayable.js":"/Users/adam/projects/crospy2/jsplayer/src/models/Unplayable.js","./Cell.jsx":"/Users/adam/projects/crospy2/jsplayer/src/components/Cell.jsx","./Keyboard.jsx":"/Users/adam/projects/crospy2/jsplayer/src/components/Keyboard.jsx","react":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy2/jsplayer/src/components/Chat.jsx":[function(require,module,exports){
+},{"../app-actions":"/Users/adam/projects/crospy/jsplayer/src/app-actions.js","../models/Directions.js":"/Users/adam/projects/crospy/jsplayer/src/models/Directions.js","../models/Unplayable.js":"/Users/adam/projects/crospy/jsplayer/src/models/Unplayable.js","./Cell.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/Cell.jsx","./Keyboard.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/Keyboard.jsx","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy/jsplayer/src/components/Chat.jsx":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29124,7 +29104,7 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"../CrosswordStore":"/Users/adam/projects/crospy2/jsplayer/src/CrosswordStore.js","../app-constants":"/Users/adam/projects/crospy2/jsplayer/src/app-constants.js","react":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy2/jsplayer/src/components/ClueList.jsx":[function(require,module,exports){
+},{"../CrosswordStore":"/Users/adam/projects/crospy/jsplayer/src/CrosswordStore.js","../app-constants":"/Users/adam/projects/crospy/jsplayer/src/app-constants.js","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy/jsplayer/src/components/ClueList.jsx":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29147,6 +29127,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _CrosswordStore = require('../CrosswordStore');
+
+var _CrosswordStore2 = _interopRequireDefault(_CrosswordStore);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _react2.default.createClass({
@@ -29160,6 +29144,7 @@ exports.default = _react2.default.createClass({
     var node = _reactDom2.default.findDOMNode(this),
         container = (0, _jquery2.default)(node).find('.clue-list-container'),
         activeClue = container.find('.active-clue');
+
     if (activeClue.length > 0) {
       var newTop = activeClue.offset().top - container.offset().top - container.height() / 2 + activeClue.height() / 2;
       container.scrollTop(container.scrollTop() + newTop);
@@ -29211,7 +29196,7 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"classnames":"/Users/adam/projects/crospy2/jsplayer/node_modules/classnames/index.js","jquery":"/Users/adam/projects/crospy2/jsplayer/node_modules/jquery/dist/jquery.js","react":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/react.js","react-dom":"/Users/adam/projects/crospy2/jsplayer/node_modules/react-dom/index.js"}],"/Users/adam/projects/crospy2/jsplayer/src/components/Crossword.jsx":[function(require,module,exports){
+},{"../CrosswordStore":"/Users/adam/projects/crospy/jsplayer/src/CrosswordStore.js","classnames":"/Users/adam/projects/crospy/jsplayer/node_modules/classnames/index.js","jquery":"/Users/adam/projects/crospy/jsplayer/node_modules/jquery/dist/jquery.js","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js","react-dom":"/Users/adam/projects/crospy/jsplayer/node_modules/react-dom/index.js"}],"/Users/adam/projects/crospy/jsplayer/src/components/Crossword.jsx":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29254,6 +29239,10 @@ var _Chat = require('./Chat.jsx');
 
 var _Chat2 = _interopRequireDefault(_Chat);
 
+var _CrosswordStore = require('../CrosswordStore');
+
+var _CrosswordStore2 = _interopRequireDefault(_CrosswordStore);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _react2.default.createClass({
@@ -29265,8 +29254,26 @@ exports.default = _react2.default.createClass({
       revealEverything: false,
       highlightErrors: false,
       activeCell: undefined,
-      direction: _Directions2.default.ACROSS
+      direction: _Directions2.default.ACROSS,
+      cellValues: [],
+      cellSources: []
+
     };
+  },
+
+  handleChange: function handleChange(changeEvent) {
+    var values = this.state.cellValues,
+        sources = this.state.cellSources;
+    values[changeEvent.cellId] = changeEvent.character;
+    sources[changeEvent.cellId] = changeEvent.source;
+    this.setState({
+      cellValues: values,
+      cellSources: sources
+    });
+  },
+
+  componentWillMount: function componentWillMount() {
+    _CrosswordStore2.default.addChangeListener(this.handleChange);
   },
 
   getWordNumber: function getWordNumber(cell, direction) {
@@ -29376,6 +29383,9 @@ exports.default = _react2.default.createClass({
           'div',
           { className: 'col-md-8' },
           _react2.default.createElement(_Cells2.default, { numbered: this.props.numbered,
+            playerId: this.props.playerId,
+            cellValues: this.state.cellValues,
+            cellSources: this.state.cellSources,
             highlightedCells: this.props.model.wordAt(this.state.activeCell, this.state.direction),
             highlightErrors: this.state.highlightErrors,
             revealEverything: this.state.revealEverything,
@@ -29394,12 +29404,6 @@ exports.default = _react2.default.createClass({
             null,
             _react2.default.createElement('input', { type: 'checkbox', onChange: this.toggleHighlightErrors, checked: this.state.highlightErrors }),
             ' Show Errors'
-          ),
-          _react2.default.createElement(
-            'label',
-            null,
-            _react2.default.createElement('input', { type: 'checkbox', onChange: this.toggleRevealEverything, checked: this.state.revealEverything }),
-            ' Reveal Answers'
           ),
           _react2.default.createElement(
             'label',
@@ -29444,7 +29448,7 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"../app-actions":"/Users/adam/projects/crospy2/jsplayer/src/app-actions.js","../models/CrosswordModel.js":"/Users/adam/projects/crospy2/jsplayer/src/models/CrosswordModel.js","../models/Directions.js":"/Users/adam/projects/crospy2/jsplayer/src/models/Directions.js","../models/Unplayable.js":"/Users/adam/projects/crospy2/jsplayer/src/models/Unplayable.js","./Cells.jsx":"/Users/adam/projects/crospy2/jsplayer/src/components/Cells.jsx","./Chat.jsx":"/Users/adam/projects/crospy2/jsplayer/src/components/Chat.jsx","./ClueList.jsx":"/Users/adam/projects/crospy2/jsplayer/src/components/ClueList.jsx","./CurrentClue.jsx":"/Users/adam/projects/crospy2/jsplayer/src/components/CurrentClue.jsx","react":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy2/jsplayer/src/components/CurrentClue.jsx":[function(require,module,exports){
+},{"../CrosswordStore":"/Users/adam/projects/crospy/jsplayer/src/CrosswordStore.js","../app-actions":"/Users/adam/projects/crospy/jsplayer/src/app-actions.js","../models/CrosswordModel.js":"/Users/adam/projects/crospy/jsplayer/src/models/CrosswordModel.js","../models/Directions.js":"/Users/adam/projects/crospy/jsplayer/src/models/Directions.js","../models/Unplayable.js":"/Users/adam/projects/crospy/jsplayer/src/models/Unplayable.js","./Cells.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/Cells.jsx","./Chat.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/Chat.jsx","./ClueList.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/ClueList.jsx","./CurrentClue.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/CurrentClue.jsx","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy/jsplayer/src/components/CurrentClue.jsx":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29478,7 +29482,7 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"../models/Directions.js":"/Users/adam/projects/crospy2/jsplayer/src/models/Directions.js","react":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy2/jsplayer/src/components/Keyboard.jsx":[function(require,module,exports){
+},{"../models/Directions.js":"/Users/adam/projects/crospy/jsplayer/src/models/Directions.js","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy/jsplayer/src/components/Keyboard.jsx":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29550,14 +29554,14 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"classnames":"/Users/adam/projects/crospy2/jsplayer/node_modules/classnames/index.js","react":"/Users/adam/projects/crospy2/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy2/jsplayer/src/data.js":[function(require,module,exports){
+},{"classnames":"/Users/adam/projects/crospy/jsplayer/node_modules/classnames/index.js","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy/jsplayer/src/data.js":[function(require,module,exports){
 "use strict";
 
 (function (module) {
     module.exports = { "numbered": { "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "11": 11, "12": 11, "13": 45, "14": 46, "15": 47, "16": 16, "26": 21, "31": 30, "41": 35, "46": 38, "50": 41, "54": 44, "55": 53, "58": 47, "61": 52, "64": 56, "70": 55, "72": 62, "79": 58, "81": 70, "83": 107, "84": 95, "87": 65, "88": 86, "89": 87, "90": 88, "91": 89, "92": 90, "93": 91, "96": 73, "97": 106, "102": 77, "106": 80, "111": 85, "115": 108, "118": 88, "121": 92, "124": 111, "127": 96, "132": 115, "136": 104, "141": 123, "145": 110, "146": 168, "154": 113, "155": 149, "161": 118, "163": 156, "164": 157, "165": 158, "166": 159, "167": 160, "168": 161, "170": 124, "172": 164, "174": 166, "175": 167, "178": 130, "181": 135, "184": 162, "187": 144, "188": 165, "192": 169, "196": 149, "202": 158, "211": 163, "217": 172 }, "gridinfo": { "size": 15, "name": "Randomly Generated Crossword", "randid": 59822 }, "clues": { "Across": { "1": { "clue_number": 1, "clue_text": "European weed naturalized in southwestern United States and Mexico having reddish decumbent stems with small fernlike leaves and small deep reddish-lavender flowers followed by slender fruits that stick straight up; often grown for forage" }, "10": { "clue_number": 10, "clue_text": "sorghums of dry regions of Asia and North Africa" }, "15": { "clue_number": 15, "clue_text": "egg cooked briefly in the shell in gently boiling water" }, "16": { "clue_number": 16, "clue_text": "rhubarb" }, "17": { "clue_number": 17, "clue_text": "relating to geometry as developed by Euclid" }, "18": { "clue_number": 18, "clue_text": "having attained a specific age; (`aged' is pronounced as one syllable)" }, "19": { "clue_number": 19, "clue_text": "convert into ___es" }, "20": { "clue_number": 20, "clue_text": "an informal term for a father; probably derived from baby talk" }, "21": { "clue_number": 21, "clue_text": "a corporation's first offer to sell stock to the public" }, "23": { "clue_number": 23, "clue_text": "make a sweeping movement" }, "24": { "clue_number": 24, "clue_text": "an American operation in World War I (1918); American troops under Pershing drove back the German armies which were saved only by the armistice on November 11" }, "26": { "clue_number": 26, "clue_text": "(computer science) the part of a computer (a microprocessor chip) that does most of the data processing" }, "28": { "clue_number": 28, "clue_text": "the military intelligence agency that provides for the intelligence and counterintelligence and investigative and security requirements of the United States Navy" }, "30": { "clue_number": 30, "clue_text": "the month following August and preceding October" }, "32": { "clue_number": 32, "clue_text": "the act of changing your residence or place of business" }, "36": { "clue_number": 36, "clue_text": "absent without permission" }, "39": { "clue_number": 39, "clue_text": "a city of central China; capital of ancient Chinese empire 221-206 BC" }, "41": { "clue_number": 41, "clue_text": "(often followed by `for') ardently or excessively desirous" }, "42": { "clue_number": 42, "clue_text": "a cluster of hooks (without barbs) that is drawn through a school of fish to hook their bodies; used when fish are not biting" }, "43": { "clue_number": 43, "clue_text": "large dark-striped tropical food and game fish related to remoras; found worldwide in coastal to open waters" }, "45": { "clue_number": 45, "clue_text": "an explosive device that is improvised" }, "46": { "clue_number": 46, "clue_text": "a radical terrorist group dedicated to the removal of British forces from Northern Ireland and the unification of Ireland" }, "48": { "clue_number": 48, "clue_text": "Scottish chemist noted for his research into the structure of nucleic acids (born in 1907)" }, "49": { "clue_number": 49, "clue_text": "King of England who was renounced by Northumbria in favor of his brother Edgar (died in 959)" }, "50": { "clue_number": 50, "clue_text": "a European river; flows into the Baltic Sea" }, "51": { "clue_number": 51, "clue_text": "a gangster's pistol" }, "52": { "clue_number": 52, "clue_text": "a diploma given for vocational training that prepares the student for a career in a particular area; good students may progress to a course leading to a degree" }, "54": { "clue_number": 54, "clue_text": "(formerly) a title of respect for a man in Turkey or Egypt" }, "56": { "clue_number": 56, "clue_text": "superior in rank or accomplishment" }, "60": { "clue_number": 60, "clue_text": "voracious snakelike marine or freshwater fishes with smooth slimy usually scaleless skin and having a continuous vertical fin but no ventral fins" }, "63": { "clue_number": 63, "clue_text": "the ratio of the distance traveled (in kilometers) to the time spent traveling (in hours)" }, "65": { "clue_number": 65, "clue_text": "hormones (estrogen and progestin) are given to postmenopausal women; believed to protect them from heart disease and osteoporosis" }, "67": { "clue_number": 67, "clue_text": "an edge tool with a heavy bladed head mounted across a handle" }, "68": { "clue_number": 68, "clue_text": "the younger of the two _____ brothers remembered best for their fairy stories (1786-1859)" }, "70": { "clue_number": 70, "clue_text": "act as a _________er in a sports event" }, "73": { "clue_number": 73, "clue_text": "infections of the skin or nails caused by fungi and appearing as itching circular patches" }, "74": { "clue_number": 74, "clue_text": "English philologist who first proposed the Oxford English Dictionary (1825-1910)" }, "75": { "clue_number": 75, "clue_text": "apprehended with certainty" }, "76": { "clue_number": 76, "clue_text": "the state of being certain" } }, "Down": { "1": { "clue_number": 1, "clue_text": "at right angles to the length of a ship or airplane" }, "2": { "clue_number": 2, "clue_text": "wingless insect with mouth parts adapted for biting; mostly parasitic on birds" }, "3": { "clue_number": 3, "clue_text": "a lightweight triangular scarf worn by a woman" }, "4": { "clue_number": 4, "clue_text": "with difficulty or inconvenience; scarcely or hardly" }, "5": { "clue_number": 5, "clue_text": "a city in the western Netherlands; residence of the Pilgrim Fathers for 11 years before they sailed for America in 1620" }, "6": { "clue_number": 6, "clue_text": "either of two distinct works in Old Icelandic dating from the late 13th century and consisting of 34 mythological and heroic ballads composed between 800 and 1200; the primary source for Scandinavian mythology" }, "7": { "clue_number": 7, "clue_text": "Scottish philosopher of common sense who opposed the ideas of David Hume (1710-1796)" }, "8": { "clue_number": 8, "clue_text": "one of the most common of the five major classes of immunoglobulins; the chief antibody in the membranes of the gastrointestinal and respiratory tracts" }, "9": { "clue_number": 9, "clue_text": "(Sanskrit) Hindu god of fire in ancient and traditional India; one of the three chief deities of the Vedas" }, "10": { "clue_number": 10, "clue_text": "a shape that sags" }, "11": { "clue_number": 11, "clue_text": "300 to 3000 megahertz" }, "12": { "clue_number": 12, "clue_text": "gather, as of natural products" }, "13": { "clue_number": 13, "clue_text": "(anatomy) a fold or wrinkle or crease" }, "14": { "clue_number": 14, "clue_text": "a primeval Egyptian personification of air and breath; worshipped especially at Thebes" }, "22": { "clue_number": 22, "clue_text": "a drug used as an anesthetic by veterinarians; illicitly taken (originally in the form of powder or `dust') for its effects as a hallucinogen" }, "25": { "clue_number": 25, "clue_text": "(Roman mythology) ancient Roman god; personification of the sun; counterpart of Greek Helios" }, "27": { "clue_number": 27, "clue_text": "fringe-toed lizard" }, "29": { "clue_number": 29, "clue_text": "being nine more than eighty" }, "30": { "clue_number": 30, "clue_text": "a shoe carved from a single block of wood" }, "31": { "clue_number": 31, "clue_text": "a town in north central Oklahoma" }, "33": { "clue_number": 33, "clue_text": "Roman poet remembered for his elegiac verses on love (43 BC - AD 17)" }, "34": { "clue_number": 34, "clue_text": "look at carefully; study mentally" }, "35": { "clue_number": 35, "clue_text": "flow in a circular current, of liquids" }, "36": { "clue_number": 36, "clue_text": "a fee charged for exchanging currencies" }, "37": { "clue_number": 37, "clue_text": "breath" }, "38": { "clue_number": 38, "clue_text": "look at with amorous intentions" }, "40": { "clue_number": 40, "clue_text": "the 9th letter of the Greek alphabet" }, "44": { "clue_number": 44, "clue_text": "hormone secreted by the posterior pituitary gland (trade name Pitressin) and also by nerve endings in the hypothalamus; affects blood pressure by stimulating capillary muscles and reduces urine flow by affecting reabsorption of water by kidney tubules" }, "47": { "clue_number": 47, "clue_text": "someone who engages in ___itrage (who purchases securities in one market for immediate resale in another in the hope of profiting from the price differential)" }, "49": { "clue_number": 49, "clue_text": "automatic data processing by electronic means without the use of tabulating cards or punched tapes" }, "51": { "clue_number": 51, "clue_text": "deprive of by deceit" }, "53": { "clue_number": 53, "clue_text": "aquatic South American rodent resembling a small beaver; bred for its fur" }, "55": { "clue_number": 55, "clue_text": "Swedish oceanographer who recognized the role of the Coriolis effect on ocean currents (1874-1954)" }, "57": { "clue_number": 57, "clue_text": "(ancient Greece) a hymn of praise (especially one sung in ancient Greece to invoke or thank a deity)" }, "58": { "clue_number": 58, "clue_text": "heighten or intensify" }, "59": { "clue_number": 59, "clue_text": "displaying a red color" }, "60": { "clue_number": 60, "clue_text": "a terrorist group that is the remnants of the original Bolivian insurgents trained by Che Guevara; attacks small unprotected targets such as power pylons or oil pipelines or government buildings" }, "61": { "clue_number": 61, "clue_text": "an early name of Ireland that is now used in poetry" }, "62": { "clue_number": 62, "clue_text": "a floor covering" }, "64": { "clue_number": 64, "clue_text": "a fluorocarbon that is replacing chlorofluorocarbon as a refrigerant and propellant in aerosol cans; considered to be somewhat less destructive to the atmosphere" }, "65": { "clue_number": 65, "clue_text": "a German courtesy title or form of address for a man" }, "66": { "clue_number": 66, "clue_text": "the act of rending or ripping or splitting something" }, "69": { "clue_number": 69, "clue_text": "utter a high-pitched cry, as of seagulls" }, "71": { "clue_number": 71, "clue_text": "take on color or become colored" }, "72": { "clue_number": 72, "clue_text": "being six more than fifty" } } }, "words": { "across": { "1": "alfileria", "10": "durra", "15": "boiledegg", "16": "rheum", "17": "euclidian", "18": "ofage", "19": "ash", "20": "dad", "21": "ipo", "23": "pan", "24": "meuse", "26": "cpu", "28": "oni", "30": "sep", "32": "move", "36": "awol", "39": "xian", "41": "avid", "42": "gig", "43": "cobia", "45": "ied", "46": "inla", "48": "todd", "49": "edwy", "50": "oder", "51": "gat", "52": "hnd", "54": "bey", "56": "upper", "60": "eel", "63": "kph", "65": "hrt", "67": "axe", "68": "grimm", "70": "cheerlead", "73": "tinea", "74": "furnivall", "75": "known", "76": "certainty" }, "down": { "1": "abeam", "2": "louse", "3": "fichu", "4": "ill", "5": "leiden", "6": "edda", "7": "reid", "8": "iga", "9": "agni", "10": "droop", "11": "uhf", "12": "reap", "13": "ruga", "14": "amen", "22": "pcp", "25": "sol", "27": "uma", "29": "ixc", "30": "sabot", "31": "enid", "33": "ovid", "34": "view", "35": "eddy", "36": "agio", "37": "wind", "38": "ogle", "40": "iota", "44": "adh", "47": "arb", "49": "edp", "51": "gyp", "53": "nutria", "55": "ekman", "57": "paean", "58": "exalt", "59": "redly", "60": "egtk", "61": "erin", "62": "lino", "64": "hcfc", "65": "herr", "66": "rent", "69": "mew", "71": "hue", "72": "lvi" } }, "cells": "alfileria#durraboiledegg#rheumeuclidian#ofageash#dad#ipo#panmeuse####cpu######oni#sep#moveawol#xian##avidgig##cobia##iedinla##todd#edwyoder#gat#hnd######bey####uppereel#kph#hrt#axegrimm#cheerleadtinea#furnivallknown#certainty", "grid": {}, "is_random": true };
 })(module);
 
-},{}],"/Users/adam/projects/crospy2/jsplayer/src/models/CrosswordModel.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/src/models/CrosswordModel.js":[function(require,module,exports){
 'use strict';
 
 /*global React, module, require */
@@ -29641,7 +29645,7 @@ model.prototype = {
 
 module.exports = model;
 
-},{"./Directions.js":"/Users/adam/projects/crospy2/jsplayer/src/models/Directions.js","./Unplayable.js":"/Users/adam/projects/crospy2/jsplayer/src/models/Unplayable.js"}],"/Users/adam/projects/crospy2/jsplayer/src/models/Directions.js":[function(require,module,exports){
+},{"./Directions.js":"/Users/adam/projects/crospy/jsplayer/src/models/Directions.js","./Unplayable.js":"/Users/adam/projects/crospy/jsplayer/src/models/Unplayable.js"}],"/Users/adam/projects/crospy/jsplayer/src/models/Directions.js":[function(require,module,exports){
 "use strict";
 
 (function (module) {
@@ -29651,7 +29655,7 @@ module.exports = model;
     };
 })(module);
 
-},{}],"/Users/adam/projects/crospy2/jsplayer/src/models/Unplayable.js":[function(require,module,exports){
+},{}],"/Users/adam/projects/crospy/jsplayer/src/models/Unplayable.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -30021,4 +30025,4 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}]},{},["/Users/adam/projects/crospy2/jsplayer/src/app.js"]);
+},{}]},{},["/Users/adam/projects/crospy/jsplayer/src/app.js"]);
