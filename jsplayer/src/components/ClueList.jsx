@@ -31,13 +31,13 @@ export default React.createClass({
               entered = this.props.model.wordAt(
                 this.props.model.lookupTable.numberToCell[clueId] - 1,
                 this.props.directionEnum
-              ).map((n) => this.props.cellValues[n] || '_').join(" ");
+              ).map((n) => this.props.cellValues[n] || '_').join("");
 
           return (
             <li className={classes}  onClick={this.handleClick.bind(this, clueId, this.props.directionEnum)} key={this.props.direction + "_" + clueId}>
               <div className="clue-phrase">
                 <div className="clue-number">{clue.clue_number}</div>
-                {clue.clue_text} [ {entered} ]
+                {clue.clue_text} [{entered}]
               </div>
             </li>
           )

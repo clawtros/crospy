@@ -29047,7 +29047,7 @@ exports.default = _react2.default.createClass({
             selected: id == this.props.activeCell,
             highlightErrors: this.props.highlightErrors,
             key: id,
-            playerEntered: this.props.cellSources[id] === undefined || this.props.cellValues[id] === undefined || this.props.cellSources[id] == this.props.playerId,
+            playerEntered: this.props.cellValues[id] === undefined || this.props.cellSources[id] === undefined || this.props.cellSources[id] == this.props.playerId,
             value: this.props.cellValues[id],
             playable: cell !== _Unplayable2.default,
             correctValue: cell,
@@ -29163,7 +29163,7 @@ exports.default = _react2.default.createClass({
       }),
           entered = this.props.model.wordAt(this.props.model.lookupTable.numberToCell[clueId] - 1, this.props.directionEnum).map(function (n) {
         return _this.props.cellValues[n] || '_';
-      }).join(" ");
+      }).join("");
 
       return _react2.default.createElement(
         'li',
@@ -29177,9 +29177,9 @@ exports.default = _react2.default.createClass({
             clue.clue_number
           ),
           clue.clue_text,
-          ' [ ',
+          ' [',
           entered,
-          ' ]'
+          ']'
         )
       );
     }, this);
