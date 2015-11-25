@@ -29154,11 +29154,17 @@ exports.default = _react2.default.createClass({
   render: function render() {
     var activeClue = this.props.activeClue,
         templated = Object.keys(this.props.clues).map(function (clueId) {
+      var _this = this;
+
       var clue = this.props.clues[clueId],
           classes = (0, _classnames2.default)({
         'clue-container': true,
         'active-clue': parseInt(clueId) === activeClue
-      });
+      }),
+          entered = this.props.model.wordAt(this.props.model.lookupTable.numberToCell[clueId] - 1, this.props.directionEnum).map(function (n) {
+        return _this.props.cellValues[n] || '_';
+      }).join(" ");
+
       return _react2.default.createElement(
         'li',
         { className: classes, onClick: this.handleClick.bind(this, clueId, this.props.directionEnum), key: this.props.direction + "_" + clueId },
@@ -29170,7 +29176,10 @@ exports.default = _react2.default.createClass({
             { className: 'clue-number' },
             clue.clue_number
           ),
-          clue.clue_text
+          clue.clue_text,
+          ' [ ',
+          entered,
+          ' ]'
         )
       );
     }, this);
@@ -29427,6 +29436,8 @@ exports.default = _react2.default.createClass({
               'div',
               { className: "col-xs-6 col-md-12" },
               _react2.default.createElement(_ClueList2.default, { direction: 'Across',
+                model: this.props.model,
+                cellValues: this.state.cellValues,
                 directionEnum: _Directions2.default.ACROSS,
                 activeClue: this.state.activeAcrossClue,
                 clues: this.props.clues.Across,
@@ -29436,6 +29447,8 @@ exports.default = _react2.default.createClass({
               'div',
               { className: "col-xs-6 col-md-12" },
               _react2.default.createElement(_ClueList2.default, { direction: 'Down',
+                model: this.props.model,
+                cellValues: this.state.cellValues,
                 directionEnum: _Directions2.default.DOWN,
                 activeClue: this.state.activeDownClue,
                 clues: this.props.clues.Down,
@@ -29638,7 +29651,7 @@ model.prototype = {
         break;
       }
     }
-    return left.concat(right);
+    return left.concat(right).slice(1);
   }
 
 };

@@ -71,7 +71,7 @@ model.prototype = {
         break;
       }
     }
-    return left.concat(right);
+    return left.concat(right).slice(1);
   }
 
 };
