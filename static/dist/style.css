@@ -5,6 +5,7 @@
     font-family: monospace;
     letter-spacing: 1px;
     color: #999;
+    text-transform: uppercase;
 }
 
 .keyboard.onscreen {
@@ -308,6 +309,16 @@ label {
   top: 0;
   right: 0;
 }
+
+@media only screen and (min-width: 48em) {
+    .col-md-8.grid-container {
+        padding-right: 0;
+    }
+    .col-md-4.cell-lists-container {
+        padding-left: 5px;
+    }
+}
+
 @media only screen and (max-width: 48em) {
   h3.current-clue {
     white-space: initial;
@@ -346,3 +357,4 @@ label {
     bottom: 0; right: 0;
     padding: 5px;
 }
+

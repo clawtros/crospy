@@ -8,6 +8,7 @@ import DIRECTIONS from '../models/Directions.js';
 import UNPLAYABLE from '../models/Unplayable.js';
 import Chat from './Chat.jsx';
 import CrosswordStore from '../CrosswordStore';
+import classNames from 'classnames';
 
 export default React.createClass({
 
@@ -126,6 +127,14 @@ export default React.createClass({
   },
   
   render: function() {
+    var leftClass = classNames({
+      'col-md-8': true,
+      'grid-container': true
+    }),
+        rightClass = classNames({
+          'col-md-4': true,
+          'clue-lists-container': true
+        });
     return (
       <div>
         <Chat crosswordId={this.props.crosswordId} />
@@ -140,7 +149,7 @@ export default React.createClass({
           </div>
         </div>
         <div className="row">
-          <div className="col-md-8">
+          <div className={leftClass}>
             <Cells numbered={this.props.numbered}
                    playerId={this.props.playerId}
                    cellValues={this.state.cellValues}
@@ -167,7 +176,7 @@ export default React.createClass({
 
             <a href="/">New</a>
           </div>
-          <div className="col-md-4">
+          <div className={rightClass}>
             <div className="row">
               <div className={"col-xs-6 col-md-12"}>
                 <ClueList direction="Across"

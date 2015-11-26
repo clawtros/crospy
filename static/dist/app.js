@@ -29268,6 +29268,10 @@ var _CrosswordStore = require('../CrosswordStore');
 
 var _CrosswordStore2 = _interopRequireDefault(_CrosswordStore);
 
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _react2.default.createClass({
@@ -29378,6 +29382,14 @@ exports.default = _react2.default.createClass({
   },
 
   render: function render() {
+    var leftClass = (0, _classnames2.default)({
+      'col-md-8': true,
+      'grid-container': true
+    }),
+        rightClass = (0, _classnames2.default)({
+      'col-md-4': true,
+      'clue-lists-container': true
+    });
     return _react2.default.createElement(
       'div',
       null,
@@ -29406,7 +29418,7 @@ exports.default = _react2.default.createClass({
         { className: 'row' },
         _react2.default.createElement(
           'div',
-          { className: 'col-md-8' },
+          { className: leftClass },
           _react2.default.createElement(_Cells2.default, { numbered: this.props.numbered,
             playerId: this.props.playerId,
             cellValues: this.state.cellValues,
@@ -29444,7 +29456,7 @@ exports.default = _react2.default.createClass({
         ),
         _react2.default.createElement(
           'div',
-          { className: 'col-md-4' },
+          { className: rightClass },
           _react2.default.createElement(
             'div',
             { className: 'row' },
@@ -29479,7 +29491,7 @@ exports.default = _react2.default.createClass({
   }
 });
 
-},{"../CrosswordStore":"/Users/adam/projects/crospy/jsplayer/src/CrosswordStore.js","../app-actions":"/Users/adam/projects/crospy/jsplayer/src/app-actions.js","../models/CrosswordModel.js":"/Users/adam/projects/crospy/jsplayer/src/models/CrosswordModel.js","../models/Directions.js":"/Users/adam/projects/crospy/jsplayer/src/models/Directions.js","../models/Unplayable.js":"/Users/adam/projects/crospy/jsplayer/src/models/Unplayable.js","./Cells.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/Cells.jsx","./Chat.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/Chat.jsx","./ClueList.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/ClueList.jsx","./CurrentClue.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/CurrentClue.jsx","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy/jsplayer/src/components/CurrentClue.jsx":[function(require,module,exports){
+},{"../CrosswordStore":"/Users/adam/projects/crospy/jsplayer/src/CrosswordStore.js","../app-actions":"/Users/adam/projects/crospy/jsplayer/src/app-actions.js","../models/CrosswordModel.js":"/Users/adam/projects/crospy/jsplayer/src/models/CrosswordModel.js","../models/Directions.js":"/Users/adam/projects/crospy/jsplayer/src/models/Directions.js","../models/Unplayable.js":"/Users/adam/projects/crospy/jsplayer/src/models/Unplayable.js","./Cells.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/Cells.jsx","./Chat.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/Chat.jsx","./ClueList.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/ClueList.jsx","./CurrentClue.jsx":"/Users/adam/projects/crospy/jsplayer/src/components/CurrentClue.jsx","classnames":"/Users/adam/projects/crospy/jsplayer/node_modules/classnames/index.js","react":"/Users/adam/projects/crospy/jsplayer/node_modules/react/react.js"}],"/Users/adam/projects/crospy/jsplayer/src/components/CurrentClue.jsx":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
