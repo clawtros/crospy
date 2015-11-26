@@ -28609,12 +28609,14 @@ var CrosswordStore = assign(EventEmitter.prototype, {
 
 // TODO: Move all this socket stuff out and make it optional
 socket.on('roster', function (members) {
-  console.log("ROSTER", members);
   CrosswordStore.emit(AppConstants.ROSTER_UPDATE, members);
 });
 
+socket.on('chat', function (message) {
+  CrosswordStore.emit(AppConstants.CHAT, message);
+});
+
 socket.on('key summary', function (events) {
-  console.log("KEY SUMMARY", events);
   var _iteratorNormalCompletion = true;
   var _didIteratorError = false;
   var _iteratorError = undefined;
@@ -28642,7 +28644,6 @@ socket.on('key summary', function (events) {
 });
 
 socket.on('key pressed', function (event) {
-  console.log("KEY", event);
   CrosswordStore.emit(AppConstants.CHANGE_EVENT, event);
 });
 
@@ -28686,6 +28687,7 @@ module.exports = {
   REQUEST_CROSSWORD: "REQUEST_CROSSWORD",
   ROSTER_UPDATE: 'roster',
   GENERATED_EVENT: 'generated',
+  CHAT_SENT: 'chat',
   LOADED_EVENT: 'loaded',
   CHANGE_EVENT: 'change'
 };
@@ -29085,6 +29087,7 @@ exports.default = _react2.default.createClass({
 
   getInitialState: function getInitialState() {
     return {
+      messages: [],
       roster: []
     };
   },
@@ -29159,6 +29162,7 @@ exports.default = _react2.default.createClass({
       var clue = this.props.clues[clueId],
           classes = (0, _classnames2.default)({
         'clue-container': true,
+        'active-direction': this.props.isActive,
         'active-clue': parseInt(clueId) === activeClue
       }),
           word = this.props.model.wordAt(this.props.model.lookupTable.numberToCell[clueId] - 1, this.props.directionEnum),
@@ -29187,7 +29191,11 @@ exports.default = _react2.default.createClass({
           ),
           clue.clue_text,
           ' ',
-          showEntered ? '[' + entered.join("") + ']' : ''
+          _react2.default.createElement(
+            'span',
+            { className: 'entered' },
+            showEntered ? '[' + entered.join("") + ']' : ''
+          )
         )
       );
     }, this);
@@ -29444,6 +29452,7 @@ exports.default = _react2.default.createClass({
               'div',
               { className: "col-xs-6 col-md-12" },
               _react2.default.createElement(_ClueList2.default, { direction: 'Across',
+                isActive: this.state.direction == _Directions2.default.ACROSS,
                 model: this.props.model,
                 cellValues: this.state.cellValues,
                 directionEnum: _Directions2.default.ACROSS,
@@ -29455,6 +29464,7 @@ exports.default = _react2.default.createClass({
               'div',
               { className: "col-xs-6 col-md-12" },
               _react2.default.createElement(_ClueList2.default, { direction: 'Down',
+                isActive: this.state.direction == _Directions2.default.DOWN,
                 model: this.props.model,
                 cellValues: this.state.cellValues,
                 directionEnum: _Directions2.default.DOWN,

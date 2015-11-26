@@ -4,6 +4,7 @@ module.exports = {
   REQUEST_CROSSWORD: "REQUEST_CROSSWORD",
   ROSTER_UPDATE: 'roster',
   GENERATED_EVENT: 'generated',
+  CHAT_SENT: 'chat',
   LOADED_EVENT: 'loaded',
   CHANGE_EVENT: 'change'
 }

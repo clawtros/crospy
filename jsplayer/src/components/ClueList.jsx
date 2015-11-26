@@ -26,6 +26,7 @@ export default React.createClass({
           var clue = this.props.clues[clueId],
               classes = classNames({
                 'clue-container': true,
+                'active-direction': this.props.isActive,
                 'active-clue': parseInt(clueId) === activeClue
               }),
               word = this.props.model.wordAt(
@@ -44,7 +45,7 @@ export default React.createClass({
             <li className={classes} onClick={this.handleClick.bind(this, clueId, this.props.directionEnum)} key={this.props.direction + "_" + clueId}>
               <div className="clue-phrase" style={ phraseStyle }>
                 <div className="clue-number">{clue.clue_number}</div>
-                {clue.clue_text} { showEntered ? '['+entered.join("")+']' : ''}
+                {clue.clue_text} <span className="entered">{ showEntered ? '['+entered.join("")+']' : ''}</span>
               </div>
             </li>
           )

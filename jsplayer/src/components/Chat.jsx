@@ -5,6 +5,7 @@ import CrosswordStore from '../CrosswordStore';
 export default React.createClass({
   getInitialState: function() {
     return {
+      messages: [],
       roster: []
     }
   },

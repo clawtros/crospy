@@ -171,6 +171,7 @@ export default React.createClass({
             <div className="row">
               <div className={"col-xs-6 col-md-12"}>
                 <ClueList direction="Across"
+                          isActive={this.state.direction == DIRECTIONS.ACROSS}
                           model={this.props.model}
                           cellValues={this.state.cellValues}
                           directionEnum={DIRECTIONS.ACROSS}
@@ -180,6 +181,7 @@ export default React.createClass({
               </div>
               <div className={"col-xs-6 col-md-12"}>
                 <ClueList direction="Down"
+                          isActive={this.state.direction == DIRECTIONS.DOWN}
                           model={this.props.model}
                           cellValues={this.state.cellValues}
                           directionEnum={DIRECTIONS.DOWN}

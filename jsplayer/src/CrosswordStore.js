@@ -88,19 +88,20 @@ var CrosswordStore = assign(EventEmitter.prototype, {
 
 // TODO: Move all this socket stuff out and make it optional
 socket.on('roster', function(members) {
-  console.log("ROSTER", members);
   CrosswordStore.emit(AppConstants.ROSTER_UPDATE, members);
 });
 
+socket.on('chat', function(message) {
+  CrosswordStore.emit(AppConstants.CHAT, message);
+});
+
 socket.on('key summary', function(events) {
-  console.log("KEY SUMMARY", events);
   for (var cellId of Object.keys(events)) {
     CrosswordStore.emit(AppConstants.CHANGE_EVENT, events[cellId]);
   }
 });
 
 socket.on('key pressed', function(event) {
-  console.log("KEY", event);
   CrosswordStore.emit(AppConstants.CHANGE_EVENT, event);
 });
 
