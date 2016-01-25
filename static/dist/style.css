@@ -73,7 +73,7 @@
 .cell {
   float: left;
   position: relative;
-  transition: background 0.25s;
+/*  transition: background 0.25s; */
   border: 1px solid #111;
 }
 .cell-number {

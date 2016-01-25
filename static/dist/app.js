@@ -29286,7 +29286,6 @@ var AppConstants = require('./app-constants'),
 
 module.exports = {
   keyEntered: function keyEntered(cellId, character, room, source) {
-    console.log(source);
     AppDispatcher.handleViewAction({
       actionType: AppConstants.KEY_ENTERED,
       event: { cellId: cellId, character: character, room: room, source: source }
@@ -29328,7 +29327,6 @@ var Dispatcher = require('flux').Dispatcher,
     assign = require('object-assign'),
     AppDispatcher = assign(new Dispatcher(), {
   handleViewAction: function handleViewAction(action) {
-    console.log(action);
     this.dispatch({
       source: "VIEW_ACTION",
       action: action

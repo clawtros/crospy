@@ -3,7 +3,6 @@ var AppConstants = require('./app-constants'),
 
 module.exports = {
   keyEntered: function(cellId, character, room, source) {
-    console.log(source);
     AppDispatcher.handleViewAction({
       actionType: AppConstants.KEY_ENTERED,
       event: { cellId: cellId, character: character, room: room, source: source }
