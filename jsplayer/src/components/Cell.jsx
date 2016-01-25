@@ -4,7 +4,7 @@ import classNames from 'classnames';
 export default React.createClass({
 
   shouldComponentUpdate: function(nextProps, nextState) {
-    for (let prop of ['focused', 'value', 'selected', 'reveal']) {
+    for (let prop of ['focused', 'value', 'selected', 'reveal', 'highlightErrors']) {
       if (nextProps[prop] != this.props[prop]) {
         return true;
       }
