@@ -2,6 +2,16 @@ import React from 'react';
 import classNames from 'classnames';
 
 export default React.createClass({
+
+  shouldComponentUpdate: function(nextProps, nextState) {
+    for (let prop of ['focused', 'value', 'selected', 'reveal']) {
+      if (nextProps[prop] != this.props[prop]) {
+        return true;
+      }
+    }
+    return false;
+  },
+
   render: function() {
     var fontSize = this.props.size * 0.35,
         style = {
