@@ -74,7 +74,6 @@
   float: left;
   position: relative;
 /*  transition: background 0.25s; */
-  border: 1px solid #111;
 }
 .cell-number {
   -webkit-touch-callout: none;
@@ -94,6 +93,10 @@
   font-size: 50%;
 }
 .cell-content {
+      border-style: solid;
+  border-color: #111;
+  border-width: 1px 1px 0 0;
+
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -113,13 +116,19 @@
 .input-cell {
   background-color: gold;
   transform: scale(1.15);
+  border-color: transparent;
   -webkit-transform: scale(1.15);
   transition: transform 0.15s ease-out;
   -webkit-transition: transform 0.15s ease-out;
   z-index: 100;
 }
+.input-cell .cell-content {
+      border-width: 1px;
+}
 .cell-list {
-  border: 1px solid black;
+    border-style: solid;
+    border-color: #111;
+    border-width: 0px 0px 1px 1px;
 }
 .unplayable {
   background-color: #444;
