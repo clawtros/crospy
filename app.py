@@ -12,8 +12,6 @@ app = Flask(__name__)
 app.debug = True
 
 roomdata = defaultdict(list)
-        
-    
 
 @app.route('/api/random/size/<int:size>/')
 def play_size(size):

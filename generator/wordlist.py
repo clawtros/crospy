@@ -1,4 +1,8 @@
-import MySQLdb
+try:
+    import pymysql
+    pymysql.install_as_MySQLdb()
+except ImportError:
+    pass
 import re
 from crossword import BLANK
 import random
@@ -12,7 +16,7 @@ class MySQLWordList:
     words = {}
 
     def __init__(self, username, password, host, table_name, database="xwutf", word_column="word", definition_column="definition", encoding="utf-8"):
-        self.db = MySQLdb.connect(host, username, password)
+        self.db = pymysql.connect(host, username, password)
         self.encoding = encoding
         c = self.db.cursor()
         # FIXME: parameterize this -- mysqldb breaks the table_name w/ quotes
