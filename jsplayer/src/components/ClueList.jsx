@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import $ from 'jquery';
 import ReactDOM from 'react-dom';
 import CrosswordStore from '../CrosswordStore';
+var entities = require('entities');
 
 export default React.createClass({
   handleClick: function(clueId) {
@@ -16,7 +17,8 @@ export default React.createClass({
 
     if (activeClue.length > 0) {
       var newTop = activeClue.offset().top - container.offset().top - container.height() / 2 + activeClue.height() / 2;
-      container.scrollTop(container.scrollTop() + newTop);
+      container.stop();
+      container.animate({'scrollTop': container.scrollTop() + newTop}, 125);
     }
   },
   
@@ -45,13 +47,13 @@ export default React.createClass({
             <li className={classes} onClick={this.handleClick.bind(this, clueId, this.props.directionEnum)} key={this.props.direction + "_" + clueId}>
               <div className="clue-phrase" style={ phraseStyle }>
                 <div className="clue-number">{clue.clue_number}</div>
-                {clue.clue_text} <span className="entered">{ showEntered ? '['+entered.join("")+']' : ''}</span>
+                {entities.decodeHTML(clue.clue_text)} <span className="entered">{ showEntered ? '['+entered.join("")+']' : ''}</span>
               </div>
             </li>
           )
         }, this);
     
-    return <div>
+    return <div className="clues ">
               <h2 className="clue-list-header">{this.props.direction}</h2>
               <div className="clue-list-container">
                 <ul className="clue-list" >

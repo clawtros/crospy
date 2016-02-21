@@ -127,79 +127,62 @@ export default React.createClass({
   },
   
   render: function() {
-    var leftClass = classNames({
-      'col-md-8': true,
-      'grid-container': true
-    }),
-        rightClass = classNames({
-          'col-md-4': true,
-          'clue-lists-container': true
-        });
     return (
       <div>
-        <Chat crosswordId={this.props.crosswordId} />
-        <div className="row">
-          <div className="col-xs-12">
+        <div className="current-clue-container">
+          <Chat crosswordId={this.props.crosswordId} />
+          <div className={"current-clue-container"}>
             {this.state.activeCell !== undefined ? 
              <CurrentClue direction={this.state.direction}
                           clue={this.getClue(this.getCurrentClueNumber(), this.state.direction)}
              />
              : <h3 className="current-clue">Random {this.props.size} x {this.props.size} Crossword</h3> }
-             
           </div>
         </div>
-        <div className="row">
-          <div className={leftClass}>
-            <Cells numbered={this.props.numbered}
-                   playerId={this.props.playerId}
-                   cellValues={this.state.cellValues}
-                   cellSources={this.state.cellSources}
-                   highlightedCells={this.props.model.wordAt(this.state.activeCell, this.state.direction)}
-                   highlightErrors={this.state.highlightErrors}
-                   revealEverything={this.state.revealEverything}
-                   makeActive={this.handleMakeActive}
-                   activeCell={this.state.activeCell}
-                   direction={this.state.direction}
-                   crosswordId={this.props.crosswordId}
-                   skipWord={this.handleSkipWord}
-                   showKeyboard={this.state.showKeyboard}
-                   closeKeyboard={this.closeKeyboard}
-                   toggleDirection={this.toggleDirection}
-                   values={this.props.cells}
-                   size={this.props.size}/>
-            <label>
-              <input type="checkbox" onChange={this.toggleHighlightErrors} checked={this.state.highlightErrors}/> Show Errors
-            </label>
-            <label className="keyboard-label">
-              <input type="checkbox" onChange={this.toggleKeyboard} checked={this.state.showKeyboard}/> Show Keyboard
-            </label>
+        <div className="cells-container">
+          <Cells numbered={this.props.numbered}
+                 playerId={this.props.playerId}
+                 cellValues={this.state.cellValues}
+                 cellSources={this.state.cellSources}
+                 highlightedCells={this.props.model.wordAt(this.state.activeCell, this.state.direction)}
+                 highlightErrors={this.state.highlightErrors}
+                 revealEverything={this.state.revealEverything}
+                 makeActive={this.handleMakeActive}
+                 activeCell={this.state.activeCell}
+                 direction={this.state.direction}
+                 crosswordId={this.props.crosswordId}
+                 skipWord={this.handleSkipWord}
+                 showKeyboard={this.state.showKeyboard}
+                 closeKeyboard={this.closeKeyboard}
+                 toggleDirection={this.toggleDirection}
+                 values={this.props.cells}
+                 size={this.props.size}/>
+          <label>
+            <input type="checkbox" onChange={this.toggleHighlightErrors} checked={this.state.highlightErrors}/> Show Errors
+          </label>
+          <label className="keyboard-label">
+            <input type="checkbox" onChange={this.toggleKeyboard} checked={this.state.showKeyboard}/> Show Keyboard
+          </label>
 
-            <a href="/">New</a>
-          </div>
-          <div className={rightClass}>
-            <div className="row">
-              <div className={"col-xs-6 col-md-12"}>
-                <ClueList direction="Across"
-                          isActive={this.state.direction == DIRECTIONS.ACROSS}
-                          model={this.props.model}
-                          cellValues={this.state.cellValues}
-                          directionEnum={DIRECTIONS.ACROSS}
-                          activeClue={this.state.activeAcrossClue}
-                          clues={this.props.clues.Across}
-                          handleClueClick={this.handleClueClick}/>
-              </div>
-              <div className={"col-xs-6 col-md-12"}>
-                <ClueList direction="Down"
-                          isActive={this.state.direction == DIRECTIONS.DOWN}
-                          model={this.props.model}
-                          cellValues={this.state.cellValues}
-                          directionEnum={DIRECTIONS.DOWN}
-                          activeClue={this.state.activeDownClue}
-                          clues={this.props.clues.Down}
-                          handleClueClick={this.handleClueClick}/>
-              </div>
-            </div>
-          </div>
+          <a href="/">New</a>
+        </div>
+        <div className="clue-lists-container">
+          <ClueList direction="Across"
+                    isActive={this.state.direction == DIRECTIONS.ACROSS}
+                    model={this.props.model}
+                    cellValues={this.state.cellValues}
+                    directionEnum={DIRECTIONS.ACROSS}
+                    activeClue={this.state.activeAcrossClue}
+                    clues={this.props.clues.Across}
+                    handleClueClick={this.handleClueClick}/>
+          <ClueList direction="Down"
+                    isActive={this.state.direction == DIRECTIONS.DOWN}
+                    model={this.props.model}
+                    cellValues={this.state.cellValues}
+                    directionEnum={DIRECTIONS.DOWN}
+                    activeClue={this.state.activeDownClue}
+                    clues={this.props.clues.Down}
+                    handleClueClick={this.handleClueClick}/>
         </div>
       </div>
     );

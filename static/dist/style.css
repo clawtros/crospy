@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
 .othered {
     background-color: #eaeaff;
 }
@@ -95,7 +103,7 @@
 .cell-content {
       border-style: solid;
   border-color: #111;
-  border-width: 1px 1px 0 0;
+  border-width: 1px;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -128,7 +136,7 @@
 .cell-list {
     border-style: solid;
     border-color: #111;
-    border-width: 0px 0px 1px 1px;
+    border-width: 1px;
 }
 .unplayable {
   background-color: #444;
@@ -153,7 +161,7 @@
   -ms-flex-pack: center;
 }
 .clue-list-container {
-  max-height: 40vh;
+  max-height: calc(50vh - 65px);
   overflow-y: auto;
 }
 .clue-list {
@@ -184,11 +192,25 @@
 .incorrect {
   background-color: red;
 }
+
+
 div.container {
   width: 100%;
-  max-width: 1080px;
-  padding: 5px;
+  max-width: calc(125vmin);
+  margin: 0 auto;
 }
+
+.cells-container {
+    float: left;
+    width: calc(100vmin - 80px);
+}
+
+.clue-lists-container {
+    float: left;
+    width: 25vmin;
+    margin-left: 10px;
+}
+
 .small-vertical-space {
   height: 10px;
 }
@@ -196,9 +218,7 @@ div.container {
   margin: 0;
   padding: 5px 10px;
   border-width: 2px 0 1px 0;
-  border-color: black;
-  background-color: #444;
-  color: white;
+  border-color: #222;
   border-style: solid;
   font-size: 18px;
   font-weight: bold;
@@ -226,11 +246,13 @@ label {
   font-weight: normal;
 }
 .current-clue {
-  margin-top: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
+    margin: 10px 0 10px 0;
+    height: 30px;
+    font-size: 28px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .current-clue:hover {
   overflow: visible;
@@ -241,10 +263,16 @@ div.highlighted {
   transform: scale(0.9);
 }
 #loading_container {
-  width: 100vmin;
-  margin: 0 auto;
+    width: 100vmin;
+    height: 100vmin;
+    margin: 0 auto;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .foo {
+    
   width: 6.666vmin;
   height: 6.666vmin;
   float: right;
@@ -319,51 +347,61 @@ label {
   right: 0;
 }
 
-@media only screen and (min-width: 48em) {
-    .col-md-8.grid-container {
-        padding-right: 0;
-    }
-    .col-md-4.cell-lists-container {
-        padding-left: 5px;
-    }
-}
-
-@media only screen and (max-width: 48em) {
-  h3.current-clue {
-    white-space: initial;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    z-index: 10001;
-    padding: 20px;
-    margin: 0;
-    top: 0;
-    width: 100%;
-    left: 0;
-    font-size: 12pt;
-    height: 80px;
-    max-height: 80px;
-    overflow-y: auto;
-  }
-  label.keyboard-label {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 10001;
-    color: white;
-  }
-  div.cell {
-    transition: initial;
-  }
-  div.cell-list {
-    margin-top: 80px;
-  }
-}
-
-
 .chatbox {
     position: fixed;
     bottom: 0; right: 0;
     padding: 5px;
+}
+
+
+@media only screen and (max-aspect-ratio: 130/100) {
+    h3.current-clue {
+        white-space: initial;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        z-index: 10001;
+        padding: 20px;
+        margin: 0;
+        top: 0;
+        width: 100%;
+        left: 0;
+        font-size: 12pt;
+        height: 80px;
+        line-height: 1;
+        max-height: 80px;
+        overflow-y: auto;
+    }
+    label.keyboard-label {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10001;
+        color: white;
+    }
+    div.cell {
+        transition: initial;
+    }
+    div.cell-list {
+        margin-top: 80px;
+    }
+    div.container {
+        width: 100%;
+        max-width: initial;
+        margin: 0 auto;
+    }
+    .cells-container {
+        width: 100%;
+    }
+    
+    .clue-lists-container {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .clues {
+        width: 50%;
+        float: left;
+    }
 }
 
