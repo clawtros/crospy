@@ -1,21 +1,22 @@
-from random import randrange
 from crossword import Grid
 from subprocess import Popen, PIPE
-import os
+import cStringIO
 
 
 class MinionSolver:
-    def __init__(self, minion_path, tmp_path="/tmp"):
-        self.minion_path = minion_path
-        self.tmp_path = tmp_path
 
-    def _write_minionfile(self, grid, wordlist):
+    class UnsuccessfulSolveException(Exception):
+        pass
+    
+    def __init__(self, minion_path):
+        self.minion_path = minion_path
+
+    def _get_minion_string(self, grid, wordlist):
         across, down = grid.get_words()
         nums = grid.get_numbered_cells(across, down)
         formed_across = Grid.format_words(across, nums)
         formed_down = Grid.format_words(down, nums)
-        filename = os.path.join(self.tmp_path, '%s.minion' % ("".join([chr(randrange(65, 85)) for n in range(10)])))
-        outfile = open(filename, 'w')
+        outfile = cStringIO.StringIO()
         outfile.write("MINION 3\n")
         outfile.write("**VARIABLES**\n")
         allwords = []
@@ -75,9 +76,8 @@ class MinionSolver:
             outfile.write("table(down%d, v%d)\n" % (word[0], word[0]))
 
         outfile.write("**EOF**")
-        outfile.close()
-        return filename
-
+        return outfile.getvalue()
+    
     def apply_solutions(self, grid, solutions):
         across, down = grid.get_words()
         nums = grid.get_numbered_cells(across, down)
@@ -86,22 +86,17 @@ class MinionSolver:
         return grid
 
     def solve(self, grid, wordlist, timelimit=20):
-        filename = self._write_minionfile(grid, wordlist)
-        execstr = "%s %s -varorder sdf-random -noresume -timelimit %d" % (
+        execstr = "%s -- -varorder sdf-random -noresume -timelimit %d -sollimit 1 -printsolsonly" % (
             self.minion_path,
-            filename,
             timelimit)
 
-        p = Popen(execstr,
-                  shell=True,
+        p = Popen(execstr.split(),
                   stdin=PIPE,
                   stdout=PIPE,
                   stderr=PIPE)
-        stdoutput = p.stdout.readlines()
-        os.remove(filename)
-        sollines = [line for line in stdoutput if line.startswith('Sol:')]
-        if len(sollines) > 0:
-            sollines = dict(zip(self.diffs, ["".join([chr(int(c)) for c in line[4:].strip().split(' ')])
-                                             for line in sollines]))
+        stdoutput, stderrors = p.communicate(input=self._get_minion_string(grid, wordlist))
+        sollines = dict(zip(self.diffs, ["".join([chr(int(c)) for c in l.strip().split(' ')]) for l in stdoutput.split('\n') if l]))
+        
+        if sollines:
             return self.apply_solutions(grid, sollines)
-        return None
+        raise self.UnsuccessfulSolveException("Solver timed out")

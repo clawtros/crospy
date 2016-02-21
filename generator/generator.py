@@ -42,27 +42,31 @@ def get_clues(numbered_words):
 def json_grid(grid):
     across_cells, down_cells = grid.get_words()
     numbered = grid.get_numbered_cells(across_cells, down_cells)
-    return {
-        "numbered": dict([(grid.get_cell_id(c), n) for c, n in numbered.items()]),
-        "cells": str(grid).replace("\n", "").replace("*", "#"),
-        "gridinfo": {
+    try:
+        return {
+            "numbered": dict([(grid.get_cell_id(c), n) for c, n in numbered.items()]),
+            "cells": str(grid).replace("\n", "").replace("*", "#"),
+            "gridinfo": {
+                "size": len(grid.cells[0])
+            },
+            "clues": {
+                "Across": get_clues(grid.format_words(across_cells, numbered)),
+                "Down": get_clues(grid.format_words(down_cells, numbered))
+            },
+            "words": {
+                "across": dict(grid.format_words(across_cells, numbered)),
+                "down": dict(grid.format_words(down_cells, numbered))
+            },
             "size": len(grid.cells[0])
-        },
-        "clues": {
-            "Across": get_clues(grid.format_words(across_cells, numbered)),
-            "Down": get_clues(grid.format_words(down_cells, numbered))
-        },
-        "words": {
-            "across": dict(grid.format_words(across_cells, numbered)),
-            "down": dict(grid.format_words(down_cells, numbered))
-        },
-        "size": len(grid.cells[0])
-    }
-
+        }
+    except Grid.UnsuccessfulSolveException as e:
+        return {
+            "error": str(e)
+        }
 
 def get_random():
     grid = Grid(initial_data=random.choice(grids))
-    return json_grid(solver.solve(grid=grid, wordlist=wordlist))
+    return json_grid(solver.solve(grid=grid, wordlist=wordlist, timelimit=15))
 
 
 def get_random_orig(size=13):
