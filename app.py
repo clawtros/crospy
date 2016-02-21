@@ -5,7 +5,7 @@ from bson import ObjectId
 from collections import defaultdict
 import json
 
-client = MongoClient()
+client = MongoClient(connect=False)
 db = client.crosswords
 
 app = Flask(__name__)
