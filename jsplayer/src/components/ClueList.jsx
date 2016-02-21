@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import $ from 'jquery';
 import ReactDOM from 'react-dom';
 import CrosswordStore from '../CrosswordStore';
+import EnteredCharacters from './EnteredCharacters.jsx';
 var entities = require('entities');
 
 export default React.createClass({
@@ -47,7 +48,8 @@ export default React.createClass({
             <li className={classes} onClick={this.handleClick.bind(this, clueId, this.props.directionEnum)} key={this.props.direction + "_" + clueId}>
               <div className="clue-phrase" style={ phraseStyle }>
                 <div className="clue-number">{clue.clue_number}</div>
-                {entities.decodeHTML(clue.clue_text)} <span className="entered">{ showEntered ? '['+entered.join("")+']' : ''}</span>
+                {entities.decodeHTML(clue.clue_text)}
+                <EnteredCharacters word={word} cellValues={this.props.cellValues}></EnteredCharacters>
               </div>
             </li>
           )

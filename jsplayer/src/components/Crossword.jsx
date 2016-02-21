@@ -134,6 +134,8 @@ export default React.createClass({
           <div className={"current-clue-container"}>
             {this.state.activeCell !== undefined ? 
              <CurrentClue direction={this.state.direction}
+                          cellValues={this.state.cellValues}
+                          word={this.props.model.wordAt(this.state.activeCell, this.state.direction)}
                           clue={this.getClue(this.getCurrentClueNumber(), this.state.direction)}
              />
              : <h3 className="current-clue">Random {this.props.size} x {this.props.size} Crossword</h3> }
