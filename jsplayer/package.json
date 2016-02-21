@@ -23,16 +23,20 @@
     "dist": "../static/dist"
   },
   "dependencies": {
+    "autoprefixer": "^6.3.3",
     "babel": "^6.1.18",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
     "babelify": "^7.2.0",
     "classnames": "^2.2.0",
+    "cssnano": "^3.5.2",
     "entities": "^1.1.1",
     "flux": "^2.1.1",
     "html-entities": "^1.2.0",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
+    "postcss": "^5.0.16",
+    "postcss-cli": "^2.5.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "underscore": "^1.8.3",
@@ -40,7 +44,7 @@
   },
   "scripts": {
     "watch-js": "watchify -t babelify src/app.js -v -o ../static/dist/app.js",
-    "watch": "npm run watch-js",
+    "watch": "postcss -c postcss.json --watch & npm run watch-js",
     "build-js": "browserify src/app.js -t babelify | uglifyjs > ../static/dist/app.js"
   }
 }
