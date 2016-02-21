@@ -1,44 +1,46 @@
 {
-    "name": "cruciverbalizer-player",
-    "version": "0.0.1",
-    "devDependencies": {
-        "browser-sync": "1.8.2",
-        "browserify": "3.44.2",
-        "del": "1.1.1",
-        "react-addons-perf": "^0.14.6",
-        "reactify": "0.17.1",
-        "vinyl-buffer": "1.0.0",
-        "vinyl-source-stream": "1.0.0"
-    },
-    "paths": {
-        "less": "assets/less/*.less",
-        "js": "./app/**/*.js",
-        "jsx": "./app/**/*.jsx",
-        "app": "./app/app.js",
-        "html": "*.html"
-    },
-    "dest": {
-        "style": "style.css",
-        "app": "app.js",
-        "dist": "../static/dist"
-    },
-    "dependencies": {
-        "babel": "^6.1.18",
-        "babel-preset-es2015": "^6.1.18",
-        "babel-preset-react": "^6.1.18",
-        "babelify": "^7.2.0",
-        "classnames": "^2.2.0",
-        "flux": "^2.1.1",
-        "jquery": "^2.1.4",
-        "lodash": "^3.10.1",
-        "react": "^0.14.3",
-        "react-dom": "^0.14.3",
-        "underscore": "^1.8.3",
-        "watchify": "^3.6.1"
-    },
-    "scripts": {
-        "watch-js": "watchify -t babelify src/app.js -v -o ../static/dist/app.js",
-        "watch": "npm run watch-js",
-        "build-js": "browserify src/app.js -t babelify | uglifyjs > ../static/dist/app.js"
-    }
+  "name": "cruciverbalizer-player",
+  "version": "0.0.1",
+  "devDependencies": {
+    "browser-sync": "1.8.2",
+    "browserify": "3.44.2",
+    "del": "1.1.1",
+    "react-addons-perf": "^0.14.6",
+    "reactify": "0.17.1",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.0.0"
+  },
+  "paths": {
+    "less": "assets/less/*.less",
+    "js": "./app/**/*.js",
+    "jsx": "./app/**/*.jsx",
+    "app": "./app/app.js",
+    "html": "*.html"
+  },
+  "dest": {
+    "style": "style.css",
+    "app": "app.js",
+    "dist": "../static/dist"
+  },
+  "dependencies": {
+    "babel": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babelify": "^7.2.0",
+    "classnames": "^2.2.0",
+    "entities": "^1.1.1",
+    "flux": "^2.1.1",
+    "html-entities": "^1.2.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "underscore": "^1.8.3",
+    "watchify": "^3.6.1"
+  },
+  "scripts": {
+    "watch-js": "watchify -t babelify src/app.js -v -o ../static/dist/app.js",
+    "watch": "npm run watch-js",
+    "build-js": "browserify src/app.js -t babelify | uglifyjs > ../static/dist/app.js"
+  }
 }
