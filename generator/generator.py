@@ -1,10 +1,12 @@
-from crossword import Grid, random_grid
-from wordlist import MySQLWordList
-from solver import MinionSolver
 import cPickle
 import json
 import random
+
+from crossword import Grid, random_grid
 from generator_conf import settings
+from solver import MinionSolver
+from wordlist import FixedWidthFileBasedWordList, MySQLWordList, \
+    SeparatedFileBasedWordList
 
 
 mysql_wordlist = MySQLWordList(
@@ -15,7 +17,13 @@ mysql_wordlist = MySQLWordList(
     table_name=settings['database'].get('table_name'),
     encoding=settings['database'].get('encoding')
 )
-solver = MinionSolver(None, mysql_wordlist, settings['minion_path'])
+
+# nyt_wordlist = SeparatedFileBasedWordList('/home/adam/projects/crospy/generator/out.txt')
+# nyt2_wordlist = FixedWidthFileBasedWordList('/home/adam/projects/crospy/generator/clues')
+
+wordlist = mysql_wordlist
+
+solver = MinionSolver(settings['minion_path'])
 grids = cPickle.loads(open(settings['grid_path'], "r").read())
 
 # TODO: where should this go?
@@ -23,7 +31,7 @@ def get_clues(numbered_words):
     result = {}
 
     for n, t in numbered_words:
-        clue = mysql_wordlist.define(t)
+        clue = wordlist.define(t)
         result[n] = {
             "clue_number": n,
             "clue_text": clue.encode('utf-8')
@@ -34,7 +42,7 @@ def get_clues(numbered_words):
 def json_grid(grid):
     across_cells, down_cells = grid.get_words()
     numbered = grid.get_numbered_cells(across_cells, down_cells)
-    result = {
+    return {
         "numbered": dict([(grid.get_cell_id(c), n) for c, n in numbered.items()]),
         "cells": str(grid).replace("\n", "").replace("*", "#"),
         "gridinfo": {
@@ -50,23 +58,17 @@ def json_grid(grid):
         },
         "size": len(grid.cells[0])
     }
-    return result
 
 
 def get_random():
     grid = Grid(initial_data=random.choice(grids))
-    solver.wordlist = mysql_wordlist
-    solver.grid = grid
-    return json_grid(solver.solve())
+    return json_grid(solver.solve(grid=grid, wordlist=wordlist))
 
 
 def get_random_orig(size=13):
     grid = Grid(size=size)
     grid = random_grid(grid, 0.2)
-    solver.wordlist = mysql_wordlist
-    solver.grid = grid
-    result = solver.solve()
-    return json_grid(result)
+    return json_grid(solver.solve(grid=grid, wordlist=wordlist))
 
 
 if __name__ == "__main__":
