@@ -4,6 +4,8 @@ try:
 except ImportError:
     pass
 import re
+from collections import defaultdict
+
 from crossword import BLANK
 import random
 
@@ -33,3 +35,19 @@ class MySQLWordList:
     def define(self, word):
         definitions = self.words.get(word).split('|||')
         return unicode(random.choice(definitions), self.encoding)
+
+
+class FileBasedWordList(WordList):
+    words = defaultdict(list)
+
+    def __init__(self, filename, get_word=lambda x: x, get_definition=lambda x: x):
+        with open(filename) as infile:
+            for line in infile.readlines():
+                self.words[get_word(line)].append(get_definition(line))
+
+    def words_matching(self, word):
+        matching = re.compile("^{}$".format(word.replace(BLANK, "[a-z]")))
+        return [t for t in self.words.keys() if matching.match(t)]
+
+    def define(self, word):
+        return random.choice(self.words.get(word))

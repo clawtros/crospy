@@ -18,12 +18,17 @@ function getRoomSummary(room) {
 
 
 io.sockets.on('connection', function (socket) {
+
   function getRoom() {
     var room = io.nsps['/'].adapter.rooms[socket.currentRoom];
     if (room !== undefined) {
       return Object.keys(room);
     }
     return [];
+  }
+
+  socket.on('chat', function(data) {
+    
   }
 
   socket.on('key pressed', function(data) {
@@ -36,10 +41,11 @@ io.sockets.on('connection', function (socket) {
   });
 
   socket.on('join', function(data) {
+    var roster = getRoom(data.room);
+
     socket.join(data.room);
     socket.currentRoom = data.room;
     socket.emit('key summary', getRoomSummary(data.room));
-    var roster = getRoom(data.room);
     socket.broadcast.to(data.room).emit('roster', roster);
     socket.emit('roster', roster);
   });

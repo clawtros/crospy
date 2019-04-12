@@ -1,5 +1,5 @@
 from crossword import Grid, random_grid
-from wordlist import MySQLWordList
+from wordlist import MySQLWordList, FileBasedWordList
 from solver import MinionSolver
 import cPickle
 import json
@@ -15,8 +15,15 @@ mysql_wordlist = MySQLWordList(
     table_name=settings['database'].get('table_name'),
     encoding=settings['database'].get('encoding')
 )
+
+file_wordlist = FileBasedWordList(
+    '/Users/adam/projects/crospy/generator/clues',
+    get_word=lambda x: x[:26].strip(),
+    get_definition=lambda x: x[37:].strip())
+
 solver = MinionSolver(None, mysql_wordlist, settings['minion_path'])
 grids = cPickle.loads(open(settings['grid_path'], "r").read())
+
 
 # TODO: where should this go?
 def get_clues(numbered_words):

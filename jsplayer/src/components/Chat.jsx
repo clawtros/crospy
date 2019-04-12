@@ -1,6 +1,7 @@
 import React from 'react';
 import AppConstants from '../app-constants';
 import CrosswordStore from '../CrosswordStore';
+import ChatMessage from './ChatMessage.jsx';
 
 export default React.createClass({
   getInitialState: function() {
@@ -15,7 +16,13 @@ export default React.createClass({
   componentWillMount: function() {
     CrosswordStore.addEventListener(AppConstants.ROSTER_UPDATE, this.handleRosterUpdate);
   },
+  
   render: function() {
-    return <div className="chatbox">{this.state.roster.length} connected</div>;
+    return <div className="chatbox">
+      <div>
+        {this.state.messages.map((message) => <ChatMessage user={message.user} message={message.content}/>)}
+        {this.state.roster.length} connected
+      </div>
+    </div>;
   }
 })

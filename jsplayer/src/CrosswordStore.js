@@ -13,12 +13,6 @@ function _generateCrossword(callback, errors) {
         })
         .then(function(data) {
           callback(data);
-        })
-        .catch(function(err) {
-          console.log("RETRYING ", errors, err);
-          if (errors < 10) {
-            _generateCrossword(callback, errors + 1);
-          }
         });
 }
 
