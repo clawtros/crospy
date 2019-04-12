@@ -18,11 +18,13 @@ class Cell:
         self.x = x
         self.y = y
         self.is_black = is_black
-        self.value=BLANK
+        self.value = BLANK
         if not is_black and initial_value != BLANK and initial_value:
-            self.value = initial_value    
+            self.value = initial_value
+
     def set_value(self, new_val):
         self.value = new_val
+
     def __str__(self):
         if self.is_black:
             return "%s" % ("*")

@@ -1,0 +1,9 @@
+{
+    "use": ["autoprefixer", "cssnano"],
+    "input": "assets/style.css",
+    "output": "../static/dist/style.css",
+    "local-plugins": false,
+    "autoprefixer": {
+        "browsers": "> 5%"
+    }
+}

@@ -5,7 +5,7 @@ from bson import ObjectId
 from collections import defaultdict
 import json
 
-client = MongoClient()
+client = MongoClient(connect=False)
 db = client.crosswords
 
 app = Flask(__name__)
@@ -44,4 +44,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")
